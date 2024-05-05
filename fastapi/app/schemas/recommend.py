@@ -1,15 +1,16 @@
 from pydantic import BaseModel
 
 
-class CourseResp(BaseModel):
-    course_name: str
-    course_id: int
+class PubResp(BaseModel):
+    title: str
+    id: int
 
 
 class AutocompleteResp(BaseModel):
-    courses: list[CourseResp]
+    pubs: list[PubResp]
     current_page: int
     total_num: int
+    total_page: int
 
 
 class HelloResp(BaseModel):

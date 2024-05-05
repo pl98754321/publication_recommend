@@ -1,2 +1,5 @@
 .vscode
 .venv
+ds/Project
+*.csv
+__pycache__

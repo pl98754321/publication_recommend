@@ -4,12 +4,12 @@ from ..config import VERSION
 from ..schemas import AutocompleteResp, CourseDetailResp, HelloResp
 from ..utils import auto_complete_from_query, get_course_details
 
-router = APIRouter(prefix="/", tags=["course"])
+router = APIRouter(prefix="", tags=["course"])
 
 
 @router.get("/hello_world", response_model=HelloResp)
 def hello_world():
-    return {"massage": "Hello World", "version": VERSION}
+    return {"message": "Hello World", "version": VERSION}
 
 
 # Recommendation endpoint
