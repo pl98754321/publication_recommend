@@ -3,3 +3,4 @@
 ds/Project
 *.csv
 __pycache__
+logging.log

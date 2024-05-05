@@ -1,7 +1,0 @@
-2024-05-05 13:25:35,232 - DEBUG (0.0.0) Process time: 0.0000000 for /docs
-2024-05-05 13:25:35,584 - DEBUG (0.0.0) Process time: 0.0078321 for /openapi.json
-2024-05-05 13:26:54,588 - DEBUG (0.0.0) Process time: 0.0060384 for /hello_world
-2024-05-05 13:27:26,381 - DEBUG (0.0.0) Process time: 0.0018005 for /auto_complete
-2024-05-05 13:28:34,989 - DEBUG (0.0.0) Process time: 0.0000000 for /auto_complete
-2024-05-05 13:29:38,577 - DEBUG (0.0.0) Process time: 0.0171726 for /auto_complete
-2024-05-05 13:30:46,802 - DEBUG (0.0.0) Process time: 0.0331666 for /auto_complete
