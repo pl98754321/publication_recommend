@@ -7,8 +7,8 @@ class HelloResp(BaseModel):
 
 
 class affilResp(BaseModel):
-    lat: float
-    lng: float
+    lat: float | None
+    lng: float | None
     affiliation: str
 
 
@@ -36,7 +36,8 @@ class NodeGraphResp(BaseModel):
     node: list[PubResp]
 
 
-class CourseDetailResp(PubResp):
+class PubDetailResp(PubResp):
     abstract: str
+    link: str
     pub_rec: list[PubResp]
     node_graph: NodeGraphResp
