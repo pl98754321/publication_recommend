@@ -1,9 +1,21 @@
 from pydantic import BaseModel
 
 
+class HelloResp(BaseModel):
+    message: str
+    version: str
+
+
+class affilResp(BaseModel):
+    lat: float
+    lng: float
+    affiliation: str
+
+
 class PubResp(BaseModel):
     title: str
     id: int
+    affilations: list[affilResp]
 
 
 class AutocompleteResp(BaseModel):
@@ -13,20 +25,18 @@ class AutocompleteResp(BaseModel):
     total_page: int
 
 
-class HelloResp(BaseModel):
-    message: str
-    version: str
+class EdgeResp(BaseModel):
+    source: int
+    target: int
+    weight: float
 
 
-class RecommendResp(BaseModel):
-    course_name: str
-    course_x: float
-    course_y: float
-    score: float
+class NodeGraphResp(BaseModel):
+    edge: list[EdgeResp]
+    node: list[PubResp]
 
 
-class CourseDetailResp(BaseModel):
-    course_id: int
-    course_name: str
-    course_abstract: str
-    courses_recommend: list[RecommendResp]
+class CourseDetailResp(PubResp):
+    abstract: str
+    pub_rec: list[PubResp]
+    node_graph: NodeGraphResp
