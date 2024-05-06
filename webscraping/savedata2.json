@@ -1,0 +1,1662 @@
+{
+      "abstracts-retrieval-response": {
+            "item": {
+                  "ait:process-info": {
+                        "ait:status": {
+                              "@state": "new",
+                              "@type": "core",
+                              "@stage": "S300"
+                        },
+                        "ait:date-delivered": {
+                              "@day": "01",
+                              "@timestamp": "2023-07-01T02:27:56.000056-04:00",
+                              "@year": "2023",
+                              "@month": "07"
+                        },
+                        "ait:date-sort": {
+                              "@day": "31",
+                              "@year": "2018",
+                              "@month": "12"
+                        }
+                  },
+                  "bibrecord": {
+                        "head": {
+                              "author-group": {
+                                    "affiliation": {
+                                          "country": "Croatia",
+                                          "address-part": "Travanjska 18",
+                                          "postal-code": "HR-10000",
+                                          "@afid": "121236478",
+                                          "@country": "hrv",
+                                          "city": "Zagreb",
+                                          "organization": {
+                                                "$": "Center for Experimental Archaeology"
+                                          },
+                                          "affiliation-id": {
+                                                "@afid": "121236478"
+                                          },
+                                          "@affiliation-instance-id": "OB2BibRecID-948970114-8b5b9040e9781617cc2fa021ffb8004d-1",
+                                          "ce:source-text": "Center for Experimental Archaeology, Travanjska 18, HR-10000 Zagreb"
+                                    },
+                                    "author": [
+                                          {
+                                                "ce:given-name": "Ivana",
+                                                "preferred-name": {
+                                                      "ce:given-name": "Ivana",
+                                                      "ce:initials": "I.",
+                                                      "ce:surname": "Tur\u010din",
+                                                      "ce:indexed-name": "Tur\u010din I."
+                                                },
+                                                "@author-instance-id": "OB2BibRecID-948970114-80b2cc6f16d4843ba12f657c03a977d1-1",
+                                                "@seq": "1",
+                                                "ce:initials": "I.",
+                                                "@_fa": "true",
+                                                "@type": "auth",
+                                                "ce:surname": "Tur\u010din",
+                                                "@auid": "58338461900",
+                                                "ce:indexed-name": "Turcin I."
+                                          }
+                                    ]
+                              },
+                              "citation-title": "DANCE MOTIFS ON PREHISTORIC POTTERY FROM EASTERN CROATIAMOTIVI PLESA NA PRETPOVIJESNOJ KERAMICI IZ ISTO\u010cNE HRVATSKE",
+                              "abstracts": "\u00a9 2018, Archaeological museum in Zagreb. All rights reserved.In the last few decades, research on dance in the archaeological record has identified several key indicators for recognizing dance representations on the archaeological material, the most prominent being the positions of the body extremities of the anthropomorphic characters depicted, and certain forms and elements relating to the overall composition of the depiction. In addition, the portrayal of hands and fingers is a very common accompanying feature. On the basis of these features, three anthropomorphic depictions found on prehistoric pottery from Croatia \u2013 from the sites of Franjevac, Vu\u010dedol and Novigrad on Sava \u2013 are analysed in this paper, and arguments for their inclusion in the corpus of archaeological depictions of dance are presented",
+                              "correspondence": {
+                                    "affiliation": {
+                                          "country": "Croatia",
+                                          "address-part": "Travanjska 18",
+                                          "postal-code": "HR-10000",
+                                          "@country": "hrv",
+                                          "city": "Zagreb",
+                                          "organization": {
+                                                "$": "Center for Experimental Archaeology"
+                                          },
+                                          "@affiliation-instance-id": "OB2BibRecID-948970114-8b5b9040e9781617cc2fa021ffb8004d-1",
+                                          "ce:source-text": "Center for Experimental Archaeology, Travanjska 18, HR-10000 Zagreb"
+                                    },
+                                    "person": {
+                                          "ce:given-name": "Ivana",
+                                          "@author-instance-id": "OB2BibRecID-948970114-ae43808ae83e31bcd42e333159e90e4d-1",
+                                          "ce:initials": "I.",
+                                          "ce:surname": "Tur\u010din",
+                                          "ce:indexed-name": "Turcin I."
+                                    }
+                              },
+                              "citation-info": {
+                                    "author-keywords": {
+                                          "author-keyword": [
+                                                {
+                                                      "$": "anthropomorphic depictions",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                },
+                                                {
+                                                      "$": "dance",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                },
+                                                {
+                                                      "$": "Franjevac",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                },
+                                                {
+                                                      "$": "Novigrad on Sava",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                },
+                                                {
+                                                      "$": "pottery",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                },
+                                                {
+                                                      "$": "prehistory",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                },
+                                                {
+                                                      "$": "Vu\u010dedol",
+                                                      "@xml:lang": "eng",
+                                                      "@original": "y"
+                                                }
+                                          ]
+                                    },
+                                    "citation-type": {
+                                          "@code": "ar"
+                                    },
+                                    "citation-language": {
+                                          "@language": "Croatian",
+                                          "@xml:lang": "hrv"
+                                    },
+                                    "abstract-language": [
+                                          {
+                                                "@language": "English",
+                                                "@xml:lang": "eng"
+                                          },
+                                          {
+                                                "@language": "Croatian",
+                                                "@xml:lang": "hrv"
+                                          }
+                                    ]
+                              },
+                              "source": {
+                                    "sourcetitle-abbrev": "Vjesn. Arheol. Muz. Zagrebu",
+                                    "website": {
+                                          "ce:e-address": {
+                                                "$": "https://hrcak.srce.hr/file/312803",
+                                                "@type": "email"
+                                          }
+                                    },
+                                    "@country": "hrv",
+                                    "translated-sourcetitle": {
+                                          "@xml:lang": "eng"
+                                    },
+                                    "issn": [
+                                          {
+                                                "$": "18491561",
+                                                "@type": "electronic"
+                                          },
+                                          {
+                                                "$": "03507165",
+                                                "@type": "print"
+                                          }
+                                    ],
+                                    "volisspag": {
+                                          "voliss": {
+                                                "@volume": "51",
+                                                "@issue": "1"
+                                          },
+                                          "pagerange": {
+                                                "@first": "37",
+                                                "@last": "54"
+                                          }
+                                    },
+                                    "@type": "j",
+                                    "publicationyear": {
+                                          "@first": "2018"
+                                    },
+                                    "publisher": {
+                                          "publishername": "Archaeological museum in Zagreb"
+                                    },
+                                    "sourcetitle": "Vjesnik Arheoloskog Muzeja u Zagrebu",
+                                    "@srcid": "33188",
+                                    "publicationdate": {
+                                          "month": "12",
+                                          "year": "2018",
+                                          "date-text": {
+                                                "@xfab-added": "true",
+                                                "$": "31 December 2018"
+                                          },
+                                          "day": "31"
+                                    }
+                              },
+                              "enhancement": {
+                                    "classificationgroup": {
+                                          "classifications": [
+                                                {
+                                                      "@type": "ASJC",
+                                                      "classification": [
+                                                            {
+                                                                  "$": "1204"
+                                                            },
+                                                            {
+                                                                  "$": "3302"
+                                                            }
+                                                      ]
+                                                },
+                                                {
+                                                      "@type": "SUBJABBR",
+                                                      "classification": [
+                                                            {
+                                                                  "$": "ARTS"
+                                                            },
+                                                            {
+                                                                  "$": "SOCI"
+                                                            }
+                                                      ]
+                                                }
+                                          ]
+                                    }
+                              }
+                        },
+                        "item-info": {
+                              "copyright": {
+                                    "$": "Copyright 2023 Elsevier B.V., All rights reserved.",
+                                    "@type": "Elsevier"
+                              },
+                              "dbcollection": [
+                                    {
+                                          "$": "REAXYSCAR"
+                                    },
+                                    {
+                                          "$": "SCOPUS"
+                                    },
+                                    {
+                                          "$": "Scopusbase"
+                                    }
+                              ],
+                              "history": {
+                                    "date-created": {
+                                          "@day": "25",
+                                          "@timestamp": "BST 02:37:21",
+                                          "@year": "2023",
+                                          "@month": "06"
+                                    }
+                              },
+                              "itemidlist": {
+                                    "itemid": [
+                                          {
+                                                "$": "2023958587",
+                                                "@idtype": "PUI"
+                                          },
+                                          {
+                                                "$": "948970114",
+                                                "@idtype": "CAR-ID"
+                                          },
+                                          {
+                                                "$": "20231745673",
+                                                "@idtype": "REAXYSCAR"
+                                          },
+                                          {
+                                                "$": "20232318546",
+                                                "@idtype": "SCOPUS"
+                                          },
+                                          {
+                                                "$": "20239007630419",
+                                                "@idtype": "TPA-ID"
+                                          },
+                                          {
+                                                "$": "85162728044",
+                                                "@idtype": "SCP"
+                                          },
+                                          {
+                                                "$": "85162728044",
+                                                "@idtype": "SGR"
+                                          }
+                                    ]
+                              }
+                        },
+                        "tail": {
+                              "bibliography": {
+                                    "@refcount": "37",
+                                    "reference": [
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Balen 2011 - J. Balen, \u0110akovo-Franjevac, kasno bakrenodobno naselje, Musei Arcaeologici Zagrabiensis Catalogi et Monographiae 7, Arheolo\u0161ki muzej u Zagrebu, 2011.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-c5b88e91f5a85e0b6586e224c895f3b7-1",
+                                                "@id": "1",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162676248",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Balen 2011 Arheolo\u0161ki muzej u Zagrebu, 2011",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "J.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Balen",
+                                                                        "ce:indexed-name": "Balen J."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "\u0110akovo-Franjevac, kasno bakrenodobno naselje, Musei Arcaeologici Zagrabiensis Catalogi et Monographiae 7"
+                                                },
+                                                "ce:source-text": "Balen 2011 - J. Balen, \u0110akovo-Franjevac, kasno bakrenodobno naselje, Musei Arcaeologici Zagrabiensis Catalogi et Monographiae 7, Arheolo\u0161ki muzej u Zagrebu, 2011."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Barba, Savarese 1991 - E. Barba, N. Savarese, A Dictionary of Theatre Anthropology. The Secret Art of the Performer, Routledge, 1991.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-ea5206b85a281c48cf287fd4eaa44970-2",
+                                                "@id": "2",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1991"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0141774964",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Routledge, 1991",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Savarese",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Barba",
+                                                                        "ce:indexed-name": "Barba Savarese"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "E. Barba, N. Savarese, A Dictionary of Theatre Anthropology. The Secret Art of the Performer"
+                                                },
+                                                "ce:source-text": "Barba, Savarese 1991 - E. Barba, N. Savarese, A Dictionary of Theatre Anthropology. The Secret Art of the Performer, Routledge, 1991."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Biesele 1978 - M. Biesele, Religion and Folklore, in Tobias, P. V. (ed.), The Bushmen: San Hunters and Herders of Southern Africa, Human and Rousseau, 1978, 162-172.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-6ec99f10874a8f03d454e1d2a4ebadc5-3",
+                                                "@id": "3",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1978"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Religion and Folklore"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "60949213976",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "pagerange": {
+                                                                  "@first": "162",
+                                                                  "@last": "172"
+                                                            }
+                                                      },
+                                                      "ref-text": "Biesele 1978 in Tobias, P. (ed)",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "M.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Biesele",
+                                                                        "ce:indexed-name": "Biesele M."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "The Bushmen: San Hunters and Herders of Southern Africa, Human and Rousseau"
+                                                },
+                                                "ce:source-text": "Biesele 1978 - M. Biesele, Religion and Folklore, in Tobias, P. V. (ed.), The Bushmen: San Hunters and Herders of Southern Africa, Human and Rousseau, 1978, 162-172."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Bloch 1989 - M. Bloch, Ritual, History and Power: Selected Papers in Anthropology, Athlone Press, 1989.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-85e97af76c132e6836fd6fec15074c6e-4",
+                                                "@id": "4",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1989"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162653344",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Athlone Press",
+                                                      "ref-sourcetitle": "Bloch 1989 - M. Bloch, Ritual, History and Power: Selected Papers in Anthropology"
+                                                },
+                                                "ce:source-text": "Bloch 1989 - M. Bloch, Ritual, History and Power: Selected Papers in Anthropology, Athlone Press, 1989."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Chataigner 1995 - C. Chataigner, La Transcaucasie au N\u00e9olithique et au Chalcolithique, BAR International Series 624, Tempus Reparatum, 1995.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-68f2f38a9e547cfb18dce0e88bfd5c8e-5",
+                                                "@id": "5",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1995"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "33749582102",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Chataigner 1995 BAR International Series 624, Tempus Reparatum",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "C.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Chataigner",
+                                                                        "ce:indexed-name": "Chataigner C."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "La Transcaucasie au N\u00e9olithique et au Chalcolithique"
+                                                },
+                                                "ce:source-text": "Chataigner 1995 - C. Chataigner, La Transcaucasie au N\u00e9olithique et au Chalcolithique, BAR International Series 624, Tempus Reparatum, 1995."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Dani 1988 - A. H. Dani, Recent Archaeological Discoveries in Pakistan, UNESCO, Centre for East Asian Cultural Studies, 1988.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-409e16e59bc36292abaa8d495632eb22-6",
+                                                "@id": "6",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1988"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "61949121845",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Dani 1988 UNESCO, Centre for East Asian Cultural Studies",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "A. H.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Dani",
+                                                                        "ce:indexed-name": "Dani A. H."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Recent Archaeological Discoveries in Pakistan"
+                                                },
+                                                "ce:source-text": "Dani 1988 - A. H. Dani, Recent Archaeological Discoveries in Pakistan, UNESCO, Centre for East Asian Cultural Studies, 1988."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Dimitrijevi\u0107, Te\u017eak-Gregl, Majnari\u0107-Pand\u017ei\u0107 1998 - S. Dimitrijevi\u0107, T. Te\u017eak-Gregl, N. Majnari\u0107-Pand\u017ei\u0107, Prapovijest, Naprijed, 1998.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-aad778115465d6bfd915f33f8bbbaf89-7",
+                                                "@id": "7",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1998"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162695744",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "T. Te\u017eak-Gregl, N. Majnari\u0107-Pand\u017ei\u0107, Prapovijest, Naprijed",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Te\u017eak-Gregl",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Dimitrijevi\u0107",
+                                                                        "ce:indexed-name": "Dimitrijevic Tezak-Gregl"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Majnari\u0107-Pand\u017ei\u0107 1998 - S. Dimitrijevi\u0107"
+                                                },
+                                                "ce:source-text": "Dimitrijevi\u0107, Te\u017eak-Gregl, Majnari\u0107-Pand\u017ei\u0107 1998 - S. Dimitrijevi\u0107, T. Te\u017eak-Gregl, N. Majnari\u0107-Pand\u017ei\u0107, Prapovijest, Naprijed, 1998."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Durman 2000 - A. Durman, Vu\u010dedolski Orion i najstariji europski kalendar, Arheolo\u0161ki muzej u Zagrebu, 2000.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-3c10db3d9cc60ee49d52a1ebd4f7411a-8",
+                                                "@id": "8",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "2000"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85160264125",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Arheolo\u0161ki muzej u Zagrebu",
+                                                      "ref-sourcetitle": "Durman 2000 - A. Durman, Vu\u010dedolski Orion i najstariji europski kalendar"
+                                                },
+                                                "ce:source-text": "Durman 2000 - A. Durman, Vu\u010dedolski Orion i najstariji europski kalendar, Arheolo\u0161ki muzej u Zagrebu, 2000."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Duru, 1980 - R. Duru, Kurucay Hoyu\u011fu Kazilari 1978-79, Anadolu Arastirmalari Ek Yagini 2, 1980, 1-58.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-af66f12793628edffb02fe7c5318d41c-9",
+                                                "@id": "9",
+                                                "ref-info": {
+                                                      "ref-title": {
+                                                            "ref-titletext": "R. Duru, Kurucay Hoyu\u011fu Kazilari 1978-79"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162723840",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "2"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "1",
+                                                                  "@last": "58"
+                                                            }
+                                                      },
+                                                      "ref-text": "Duru, 1980 1980",
+                                                      "ref-sourcetitle": "Anadolu Arastirmalari Ek Yagini"
+                                                },
+                                                "ce:source-text": "Duru, 1980 - R. Duru, Kurucay Hoyu\u011fu Kazilari 1978-79, Anadolu Arastirmalari Ek Yagini 2, 1980, 1-58."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Egami, Masuda, Gotoh 1977 - N. Egami, S. Masuda, T. Gotoh, Tal-i Jarri A: a Preliminary Report of the Excavations in Marv Dasht, 1961 and 1971, Orient 13, 1977, 1-14.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-e04a80d9cca2c74c474fe4804746cb81-10",
+                                                "@id": "10",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1977"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Tal-i Jarri A: a Preliminary Report of the Excavations in Marv Dasht, 1961 and 1971"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84857848812",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "13"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "1",
+                                                                  "@last": "14"
+                                                            }
+                                                      },
+                                                      "ref-text": "Gotoh 1977 N. Egami, S. Masuda, T. Gotoh",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Masuda",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Egami",
+                                                                        "ce:indexed-name": "Egami Masuda"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Orient"
+                                                },
+                                                "ce:source-text": "Egami, Masuda, Gotoh 1977 - N. Egami, S. Masuda, T. Gotoh, Tal-i Jarri A: a Preliminary Report of the Excavations in Marv Dasht, 1961 and 1971, Orient 13, 1977, 1-14."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Frachetti 2008 - M. D. Frachetti, Pastoralist Landscapes and Social Interaction in Bronze Age Eurasia, University of California Press, 2008.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-e656b7d631f9e79f385bf44d98bd97a8-11",
+                                                "@id": "11",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84887676230",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Frachetti 2008 University of California Press, 2008",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "M. D.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Frachetti",
+                                                                        "ce:indexed-name": "Frachetti M. D."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Pastoralist Landscapes and Social Interaction in Bronze Age Eurasia"
+                                                },
+                                                "ce:source-text": "Frachetti 2008 - M. D. Frachetti, Pastoralist Landscapes and Social Interaction in Bronze Age Eurasia, University of California Press, 2008."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Garfinkel 2003 - Y. Garfinkel, Dancing at the Dawn of Agriculture, University of Texas Press, 2003.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-5e20fbab74eacc9ea30c04b507b373cb-12",
+                                                "@id": "12",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162697599",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "University of Texas Press, 2003",
+                                                      "ref-sourcetitle": "Garfinkel 2003 - Y. Garfinkel, Dancing at the Dawn of Agriculture"
+                                                },
+                                                "ce:source-text": "Garfinkel 2003 - Y. Garfinkel, Dancing at the Dawn of Agriculture, University of Texas Press, 2003."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Garfinkel 2010 - Y. Garfinkel, Dance in Prehistoric Europe, Documenta Praehistorica 37, 2010, 205-214.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-4127b4be7e058b728cdbb5589dca6359-13",
+                                                "@id": "13",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "2010"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Dance in Prehistoric Europe"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84897902475",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "37"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "205",
+                                                                  "@last": "214"
+                                                            }
+                                                      },
+                                                      "ref-text": "Garfinkel, 2010",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Y.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Garfinkel",
+                                                                        "ce:indexed-name": "Garfinkel Y."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Documenta Praehistorica"
+                                                },
+                                                "ce:source-text": "Garfinkel 2010 - Y. Garfinkel, Dance in Prehistoric Europe, Documenta Praehistorica 37, 2010, 205-214."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Gautier, Lampre 1905 - J. E. Gautier, G. Lampre, Fouilles de Moussian, Mdmoires de la D\u00e9l\u00e9gation arch\u00e9ologique en Perse 8, 1905, 59-148.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-794ee46a060deef8f2db54c488c98aee-14",
+                                                "@id": "14",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1905"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "61949467527",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "8"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "59",
+                                                                  "@last": "148"
+                                                            }
+                                                      },
+                                                      "ref-text": "1905 J. E. Gautier, G. Lampre",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Lampre",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Gautier",
+                                                                        "ce:indexed-name": "Gautier Lampre"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Fouilles de Moussian, Mdmoires de la D\u00e9l\u00e9gation arch\u00e9ologique en Perse"
+                                                },
+                                                "ce:source-text": "Gautier, Lampre 1905 - J. E. Gautier, G. Lampre, Fouilles de Moussian, Mdmoires de la D\u00e9l\u00e9gation arch\u00e9ologique en Perse 8, 1905, 59-148."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Gimbutas 1982 - M. A. Gimbutas, The Goddesses and Gods of Old Europe 65003500 BC, Myths and Cult Images, University of California, 1982.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-260c31cb19448cb1295f648cb2f92dd8-15",
+                                                "@id": "15",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1982"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0004066477",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Gimbutas 1982 University of California",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "M. A.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Gimbutas",
+                                                                        "ce:indexed-name": "Gimbutas M. A."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "The Goddesses and Gods of Old Europe 65003500 BC, Myths and Cult Images"
+                                                },
+                                                "ce:source-text": "Gimbutas 1982 - M. A. Gimbutas, The Goddesses and Gods of Old Europe 65003500 BC, Myths and Cult Images, University of California, 1982."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Hauptmann 1993 - H. Hauptmann, Ein Kultgeb\u00e4ude in Nevali \u00c7ori, in Frangipane, M., Hauptmann, H., Liverani, M., Matthiae, P., Mellink, M. (eds.), Between the Rivers and over the Mountains: Archaeologica Anatolica et Mesopotamica, Alba Palmiera Dedicata, Universit\u00e0 di Roma, 1993, 37-69.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-9854db05b21daeb8cba1e101e7815254-16",
+                                                "@id": "16",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1993"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Ein Kultgeb\u00e4ude in Nevali \u00c7ori"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "33748651187",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "pagerange": {
+                                                                  "@first": "37",
+                                                                  "@last": "69"
+                                                            }
+                                                      },
+                                                      "ref-text": "Hauptmann 1993 in Frangipane, M., Hauptmann, H., Liverani, M., Matthiae, P., Mellink, M. (eds), Alba Palmiera Dedicata, Universit\u00e0 di Roma",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "H.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Hauptmann",
+                                                                        "ce:indexed-name": "Hauptmann H."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Between the Rivers and over the Mountains: Archaeologica Anatolica et Mesopotamica"
+                                                },
+                                                "ce:source-text": "Hauptmann 1993 - H. Hauptmann, Ein Kultgeb\u00e4ude in Nevali \u00c7ori, in Frangipane, M., Hauptmann, H., Liverani, M., Matthiae, P., Mellink, M. (eds.), Between the Rivers and over the Mountains: Archaeologica Anatolica et Mesopotamica, Alba Palmiera Dedicata, Universit\u00e0 di Roma, 1993, 37-69."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Herzfeld 1933 - E. Herzfeld, Aufs\u00e4tze zur altorientalischen Arch\u00e4ologie 2: Stempelsiegel, Archaeologische Mitteilungen aus Iran 5, 1933, 49-124.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-41d6ee9b5e066a4da4fec8e73d24cc4d-17",
+                                                "@id": "17",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1933"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Aufs\u00e4tze zur altorientalischen Arch\u00e4ologie 2: Stempelsiegel"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "61949296635",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "5"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "49",
+                                                                  "@last": "124"
+                                                            }
+                                                      },
+                                                      "ref-text": "Herzfeld 1933",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "E.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Herzfeld",
+                                                                        "ce:indexed-name": "Herzfeld E."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Archaeologische Mitteilungen aus Iran"
+                                                },
+                                                "ce:source-text": "Herzfeld 1933 - E. Herzfeld, Aufs\u00e4tze zur altorientalischen Arch\u00e4ologie 2: Stempelsiegel, Archaeologische Mitteilungen aus Iran 5, 1933, 49-124."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Hofiller 1933 - V. Hofiller, Corpvs Vasorvm Antiqvorvm Yugoslaviae 1, Union Academique Internationale, 1933.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-62714afce02d2099f0322245394e15b9-18",
+                                                "@id": "18",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1933"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162716262",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Hofiller 1933 Union Academique Internationale",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "V.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Hofiller",
+                                                                        "ce:indexed-name": "Hofiller V."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Corpvs Vasorvm Antiqvorvm Yugoslaviae 1"
+                                                },
+                                                "ce:source-text": "Hofiller 1933 - V. Hofiller, Corpvs Vasorvm Antiqvorvm Yugoslaviae 1, Union Academique Internationale, 1933."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Horv\u00e1th, Balen 2012 - T. Horv\u00e1th, J. Balen, The cultural attribution and dating of the cult vessel from Szelevdny - Vadas, Opvscvla Archaeologica 36, 2012, 7-25.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-ab92b28771433c17a38779c0fb8554db-19",
+                                                "@id": "19",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "2012"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "T. Horv\u00e1th, J. Balen, The cultural attribution and dating of the cult vessel from Szelevdny - Vadas"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84892156568",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "36"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "7",
+                                                                  "@last": "25"
+                                                            }
+                                                      },
+                                                      "ref-text": "2012",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Balen",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Horv\u00e1th",
+                                                                        "ce:indexed-name": "Horvath Balen"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Opvscvla Archaeologica"
+                                                },
+                                                "ce:source-text": "Horv\u00e1th, Balen 2012 - T. Horv\u00e1th, J. Balen, The cultural attribution and dating of the cult vessel from Szelevdny - Vadas, Opvscvla Archaeologica 36, 2012, 7-25."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Kaplan 1969 - J. Kaplan, Ein el Jarba: Chalcolithic Remains in the Plain of Esdraelon, Bulletin of the American Schools of Oriental Research 194, 1969, 2-39.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-2ae2e0f09e4f3bd8a4b53558a442be0a-20",
+                                                "@id": "20",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1969"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Ein el Jarba: Chalcolithic Remains in the Plain of Esdraelon"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0006368999",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "194"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "2",
+                                                                  "@last": "39"
+                                                            }
+                                                      },
+                                                      "ref-text": "Kaplan 1969",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "J.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Kaplan",
+                                                                        "ce:indexed-name": "Kaplan J."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Bulletin of the American Schools of Oriental Research"
+                                                },
+                                                "ce:source-text": "Kaplan 1969 - J. Kaplan, Ein el Jarba: Chalcolithic Remains in the Plain of Esdraelon, Bulletin of the American Schools of Oriental Research 194, 1969, 2-39."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Katz 1982 - R. Katz, Boiling Energy: Community Healing among the Kalahari !Kung, Harvard University Press, 1982.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-d1c26384560a038df7c2a04b74570f6d-21",
+                                                "@id": "21",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0003537055",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Katz 1982 Harvard University Press, 1982",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "R.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Katz",
+                                                                        "ce:indexed-name": "Katz R."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Boiling Energy: Community Healing among the Kalahari !Kung"
+                                                },
+                                                "ce:source-text": "Katz 1982 - R. Katz, Boiling Energy: Community Healing among the Kalahari !Kung, Harvard University Press, 1982."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Lange 1976 - R. Lange, The Nature of Dance: An Anthropological Perspective, International Publications Service, 1976.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-3e022dfb10c134ac7548032e5a38a06d-22",
+                                                "@id": "22",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "60949798601",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Lange 1976 International Publications Service, 1976",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "R.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Lange",
+                                                                        "ce:indexed-name": "Lange R."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "The Nature of Dance: An Anthropological Perspective"
+                                                },
+                                                "ce:source-text": "Lange 1976 - R. Lange, The Nature of Dance: An Anthropological Perspective, International Publications Service, 1976."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Maleti\u0107 1986 - A. Maleti\u0107, Knjiga o plesu, Kulturno-prosvjetni sabor Hrvatske, 1986.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-4c84ed8ca2b12c1e75c9378ddb7dba85-23",
+                                                "@id": "23",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1986"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84905589174",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Maleti\u0107 1986 Kulturno-prosvjetni sabor Hrvatske",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "A.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Maleti\u0107",
+                                                                        "ce:indexed-name": "Maletic A."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Knjiga o plesu"
+                                                },
+                                                "ce:source-text": "Maleti\u0107 1986 - A. Maleti\u0107, Knjiga o plesu, Kulturno-prosvjetni sabor Hrvatske, 1986."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Marshall 1969 - L. Marshall, The Medicine Dance of the !Kung Bushmen, Africa 39/4, 1978, 347-381.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-4f7bf4b4f30ecb02ce7ddcca1a80887b-24",
+                                                "@id": "24",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1978"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "The Medicine Dance of the !Kung Bushmen"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84959650916",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "39",
+                                                                  "@issue": "4"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "347",
+                                                                  "@last": "381"
+                                                            }
+                                                      },
+                                                      "ref-text": "Marshall 1969",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "L.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Marshall",
+                                                                        "ce:indexed-name": "Marshall L."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Africa"
+                                                },
+                                                "ce:source-text": "Marshall 1969 - L. Marshall, The Medicine Dance of the !Kung Bushmen, Africa 39/4, 1978, 347-381."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Maxim-Alaiba 1987 - R. Maxim-Alaiba, Le complexe de culte de la phase Cucuteni A3 de Dumesti (dep. de Vaslui), in Petrescu-Dimbovita, M. (ed.), La civilisation de Cucuteni en contexte Europ\u00e9en: Session scientifique la\u0219i-Piatra Neamt, 1984, Universit\u00e9 \u201cAl. I. Cuza\u201d, 1987, 269-286.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-3e26fb5b0b6a237876e07862e901796a-25",
+                                                "@id": "25",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1987"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Le complexe de culte de la phase Cucuteni A3 de Dumesti (dep. de Vaslui)"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "80054258708",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "pagerange": {
+                                                                  "@first": "269",
+                                                                  "@last": "286"
+                                                            }
+                                                      },
+                                                      "ref-text": "Maxim-Alaiba 1987 in Petrescu-Dimbovita, M. (ed), Universit\u00e9 \u201cAl. I. Cuza",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "R.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Maxim-Alaiba",
+                                                                        "ce:indexed-name": "Maxim-Alaiba R."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "La civilisation de Cucuteni en contexte Europ\u00e9en: Session scientifique la\u0219i-Piatra Neamt, 1984"
+                                                },
+                                                "ce:source-text": "Maxim-Alaiba 1987 - R. Maxim-Alaiba, Le complexe de culte de la phase Cucuteni A3 de Dumesti (dep. de Vaslui), in Petrescu-Dimbovita, M. (ed.), La civilisation de Cucuteni en contexte Europ\u00e9en: Session scientifique la\u0219i-Piatra Neamt, 1984, Universit\u00e9 \u201cAl. I. Cuza\u201d, 1987, 269-286."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Miloj\u010di\u0107 1961 - V. Miloj\u010di\u0107, Hauptergebnisse der deutschen Ausgrabungen in Thessalien 1953-58, Rudolf Habelt, 1960.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-97fa70ec3ff9815c3572deef597ea7b2-26",
+                                                "@id": "26",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1960"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84902141433",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Miloj\u010di\u0107 1961 Rudolf Habelt",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "V.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Miloj\u010di\u0107",
+                                                                        "ce:indexed-name": "Milojcic V."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Hauptergebnisse der deutschen Ausgrabungen in Thessalien 1953-58"
+                                                },
+                                                "ce:source-text": "Miloj\u010di\u0107 1961 - V. Miloj\u010di\u0107, Hauptergebnisse der deutschen Ausgrabungen in Thessalien 1953-58, Rudolf Habelt, 1960."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "M\u00fcller-Karpe 1968 - H. M\u00fcller-Karpe, Handbuch der Vorgeschichte 2: Jungsteinzeit, C. H. Beck, 1968.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-31209952eb7a4a41d9d54fdd1965c70b-27",
+                                                "@id": "27",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162708680",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "C. H. Beck, 1968",
+                                                      "ref-sourcetitle": "M\u00fcller-Karpe 1968 - H. M\u00fcller-Karpe, Handbuch der Vorgeschichte 2: Jungsteinzeit"
+                                                },
+                                                "ce:source-text": "M\u00fcller-Karpe 1968 - H. M\u00fcller-Karpe, Handbuch der Vorgeschichte 2: Jungsteinzeit, C. H. Beck, 1968."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Nitu 1967 - A. Nitu, Reprezent\u0103ri antropomorfe \u00een decorul plastic al ceramicii de stil Cucuteni A, Studii \u0219i Cercet\u0103ri de istorie veche \u015fi Arheologie 18/4, 1967, 549-561.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-b86e98ba0049b9f1404f10a80080306b-28",
+                                                "@id": "28",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1967"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Reprezent\u0103ri antropomorfe \u00een decorul plastic al ceramicii de stil Cucuteni A"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84887955895",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "18",
+                                                                  "@issue": "4"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "549",
+                                                                  "@last": "561"
+                                                            }
+                                                      },
+                                                      "ref-text": "Nitu 1967",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "A.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Nitu",
+                                                                        "ce:indexed-name": "Nitu A."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Studii \u0219i Cercet\u0103ri de istorie veche \u015fi Arheologie"
+                                                },
+                                                "ce:source-text": "Nitu 1967 - A. Nitu, Reprezent\u0103ri antropomorfe \u00een decorul plastic al ceramicii de stil Cucuteni A, Studii \u0219i Cercet\u0103ri de istorie veche \u015fi Arheologie 18/4, 1967, 549-561."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Oates 1969 - J. Oates, Choga Mami, 1967-68: A Preliminary Report, Iraq 31/2, 1969, 115-152.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-e608f668b159c69849f1270db5ff326b-29",
+                                                "@id": "29",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1969"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162641750",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "voliss": {
+                                                                  "@volume": "31",
+                                                                  "@issue": "2"
+                                                            },
+                                                            "pagerange": {
+                                                                  "@first": "115",
+                                                                  "@last": "152"
+                                                            }
+                                                      },
+                                                      "ref-sourcetitle": "Oates 1969 - J. Oates, Choga Mami, 1967-68: A Preliminary Report, Iraq"
+                                                },
+                                                "ce:source-text": "Oates 1969 - J. Oates, Choga Mami, 1967-68: A Preliminary Report, Iraq 31/2, 1969, 115-152."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Raduncheva 1973 - A. Raduncheva, Prehistoric Culture of Bulgaria, Sofia Press (Russian), 1973.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-379e0e8319011e34e0968b18e6c706b1-30",
+                                                "@id": "30",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1973"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84906158951",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Raduncheva 1973 Sofia Press (Russian)",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "A.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Raduncheva",
+                                                                        "ce:indexed-name": "Raduncheva A."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Prehistoric Culture of Bulgaria"
+                                                },
+                                                "ce:source-text": "Raduncheva 1973 - A. Raduncheva, Prehistoric Culture of Bulgaria, Sofia Press (Russian), 1973."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Schmidt, Van Loon, Curvers 1989 - E. F. Schmidt, M. Van Loon, H. H. Curvers, The Holmes Expeditions to Luristan, Oriental Institute Publications 108, Chicago University, 1989.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-8e5c3585b1994b20ccd054977db54cab-31",
+                                                "@id": "31",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1989"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "85162654749",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Oriental Institute Publications 108, Chicago University",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Van Loon",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Schmidt",
+                                                                        "ce:indexed-name": "Schmidt Van Loon"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Curvers 1989 - E. F. Schmidt, M. Van Loon, H. H. Curvers, The Holmes Expeditions to Luristan"
+                                                },
+                                                "ce:source-text": "Schmidt, Van Loon, Curvers 1989 - E. F. Schmidt, M. Van Loon, H. H. Curvers, The Holmes Expeditions to Luristan, Oriental Institute Publications 108, Chicago University, 1989."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Soar 2010 - K. Soar, Circular Dance Performances in the Prehistoric Aegean, in Michaels, A. (ed.), Ritual Dynamics and the Science of Ritual 2: Body, Performance, Agency and Experience, Harrassowitz Verlag, 2010, 137-156.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-96717158f1c14e81024e96d94d3e0b31-32",
+                                                "@id": "32",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "2010"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Circular Dance Performances in the Prehistoric Aegean"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84899550324",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "pagerange": {
+                                                                  "@first": "137",
+                                                                  "@last": "156"
+                                                            }
+                                                      },
+                                                      "ref-text": "Soar 2010 in Michaels, A. (ed), Harrassowitz Verlag",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "K.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Soar",
+                                                                        "ce:indexed-name": "Soar K."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Ritual Dynamics and the Science of Ritual 2: Body, Performance, Agency and Experience"
+                                                },
+                                                "ce:source-text": "Soar 2010 - K. Soar, Circular Dance Performances in the Prehistoric Aegean, in Michaels, A. (ed.), Ritual Dynamics and the Science of Ritual 2: Body, Performance, Agency and Experience, Harrassowitz Verlag, 2010, 137-156."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Turner 1984 - V. W. Turner, Liminality and the Performative Genres, in MacAloon, J. J. (ed.), Rite, Drama, Festival, Spectacle: Rehearsals toward a Theory of Cultural Performance, Institute for the Study of Human Issues, 1984, 19-41.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-32842c0a274b9d559f8375011b43ff08-33",
+                                                "@id": "33",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1984"
+                                                      },
+                                                      "ref-title": {
+                                                            "ref-titletext": "Liminality and the Performative Genres"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0009285623",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "pagerange": {
+                                                                  "@first": "19",
+                                                                  "@last": "41"
+                                                            }
+                                                      },
+                                                      "ref-text": "Turner 1984 in MacAloon, J. J. (ed), Institute for the Study of Human Issues",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "V. W.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Turner",
+                                                                        "ce:indexed-name": "Turner V. W."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Rite, Drama, Festival, Spectacle: Rehearsals toward a Theory of Cultural Performance"
+                                                },
+                                                "ce:source-text": "Turner 1984 - V. W. Turner, Liminality and the Performative Genres, in MacAloon, J. J. (ed.), Rite, Drama, Festival, Spectacle: Rehearsals toward a Theory of Cultural Performance, Institute for the Study of Human Issues, 1984, 19-41."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Walsh 1988 - G. L. Walsh, Australia's Greatest Rock Art, Brill/Robert Brown and Associates, 1988.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-803f11fe1c577b440c5822263cf1451d-34",
+                                                "@id": "34",
+                                                "ref-info": {
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0346674528",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Walsh 1988 Brill/Robert Brown and Associates, 1988",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "G. L.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Walsh",
+                                                                        "ce:indexed-name": "Walsh G. L."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Australia's Greatest Rock Art"
+                                                },
+                                                "ce:source-text": "Walsh 1988 - G. L. Walsh, Australia's Greatest Rock Art, Brill/Robert Brown and Associates, 1988."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Whitehouse 1995 - H. Whitehouse, Inside the Cult: Religious Innovation and Transmission in Papua New Guinea, Clarendon Press, 1995.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-d43531211c61bbad024a97a4117dd4d6-35",
+                                                "@id": "35",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1995"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0003759829",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Whitehouse 1995 Clarendon Press",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "H.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Whitehouse",
+                                                                        "ce:indexed-name": "Whitehouse H."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Inside the Cult: Religious Innovation and Transmission in Papua New Guinea"
+                                                },
+                                                "ce:source-text": "Whitehouse 1995 - H. Whitehouse, Inside the Cult: Religious Innovation and Transmission in Papua New Guinea, Clarendon Press, 1995."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Winkler 1938 - H. A. Winkler, Rock-Drawings of Southern Upper Egypt 1, Egypt Exploration Society, 1938.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-5faf9266312f226cbccbc7fb6744f252-36",
+                                                "@id": "36",
+                                                "ref-info": {
+                                                      "ref-publicationyear": {
+                                                            "@first": "1938"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "0009800138",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-text": "Winkler 1938 Egypt Exploration Society",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "H. A.",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Winkler",
+                                                                        "ce:indexed-name": "Winkler H. A."
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Rock-Drawings of Southern Upper Egypt 1"
+                                                },
+                                                "ce:source-text": "Winkler 1938 - H. A. Winkler, Rock-Drawings of Southern Upper Egypt 1, Egypt Exploration Society, 1938."
+                                          },
+                                          {
+                                                "@aii:was-generated-by": "http://data.elsevier.com/art/structure-references art:version v2.0.229",
+                                                "ref-fulltext": "Zao Fu 1992 - C. Zao Fu, Discovery of Rock Art in China, in Lorblanchet, M. (ed.), Rock Art in the Old World, Indira Gandhi National Centre for the Arts, 1992, 361-383.",
+                                                "@reference-instance-id": "OB2BibRecID-948970114-9505cf2503a11e34709306c9cbfc54f5-37",
+                                                "@id": "37",
+                                                "ref-info": {
+                                                      "ref-title": {
+                                                            "ref-titletext": "C. Zao Fu, Discovery of Rock Art in China"
+                                                      },
+                                                      "refd-itemidlist": {
+                                                            "itemid": {
+                                                                  "$": "84906193507",
+                                                                  "@idtype": "SGR"
+                                                            }
+                                                      },
+                                                      "ref-volisspag": {
+                                                            "pagerange": {
+                                                                  "@first": "361",
+                                                                  "@last": "383"
+                                                            }
+                                                      },
+                                                      "ref-text": "1992 in Lorblanchet, M. (ed), Indira Gandhi National Centre for the Arts, 1992",
+                                                      "ref-authors": {
+                                                            "author": [
+                                                                  {
+                                                                        "@seq": "1",
+                                                                        "ce:initials": "Zao",
+                                                                        "@_fa": "true",
+                                                                        "ce:surname": "Fu",
+                                                                        "ce:indexed-name": "Fu Zao"
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "ref-sourcetitle": "Rock Art in the Old World"
+                                                },
+                                                "ce:source-text": "Zao Fu 1992 - C. Zao Fu, Discovery of Rock Art in China, in Lorblanchet, M. (ed.), Rock Art in the Old World, Indira Gandhi National Centre for the Arts, 1992, 361-383."
+                                          }
+                                    ]
+                              }
+                        }
+                  }
+            },
+            "affiliation": {
+                  "affiliation-city": "Zagreb",
+                  "@id": "121236478",
+                  "affilname": "Centre for Experimental Archaeology",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/121236478",
+                  "affiliation-country": "Croatia"
+            },
+            "coredata": {
+                  "srctype": "j",
+                  "eid": "2-s2.0-85162728044",
+                  "dc:description": "In the last few decades, research on dance in the archaeological record has identified several key indicators for recognizing dance representations on the archaeological material, the most prominent being the positions of the body extremities of the anthropomorphic characters depicted, and certain forms and elements relating to the overall composition of the depiction. In addition, the portrayal of hands and fingers is a very common accompanying feature. On the basis of these features, three anthropomorphic depictions found on prehistoric pottery from Croatia \u2013 from the sites of Franjevac, Vu\u010dedol and Novigrad on Sava \u2013 are analysed in this paper, and arguments for their inclusion in the corpus of archaeological depictions of dance are presented",
+                  "prism:coverDate": "2018-12-31",
+                  "prism:aggregationType": "Journal",
+                  "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85162728044",
+                  "dc:creator": {
+                        "author": [
+                              {
+                                    "ce:given-name": "Ivana",
+                                    "preferred-name": {
+                                          "ce:given-name": "Ivana",
+                                          "ce:initials": "I.",
+                                          "ce:surname": "Tur\u010din",
+                                          "ce:indexed-name": "Tur\u010din I."
+                                    },
+                                    "@seq": "1",
+                                    "ce:initials": "I.",
+                                    "@_fa": "true",
+                                    "affiliation": {
+                                          "@id": "121236478",
+                                          "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/121236478"
+                                    },
+                                    "ce:surname": "Tur\u010din",
+                                    "@auid": "58338461900",
+                                    "author-url": "https://api.elsevier.com/content/author/author_id/58338461900",
+                                    "ce:indexed-name": "Turcin I."
+                              }
+                        ]
+                  },
+                  "link": [
+                        {
+                              "@_fa": "true",
+                              "@rel": "self",
+                              "@href": "https://api.elsevier.com/content/abstract/scopus_id/85162728044"
+                        },
+                        {
+                              "@_fa": "true",
+                              "@rel": "scopus",
+                              "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85162728044&origin=inward"
+                        },
+                        {
+                              "@_fa": "true",
+                              "@rel": "scopus-citedby",
+                              "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85162728044&origin=inward"
+                        }
+                  ],
+                  "source-id": "33188",
+                  "citedby-count": "0",
+                  "prism:volume": "51",
+                  "subtype": "ar",
+                  "dc:title": "DANCE MOTIFS ON PREHISTORIC POTTERY FROM EASTERN CROATIA MOTIVI PLESA NA PRETPOVIJESNOJ KERAMICI IZ ISTO\u010cNE HRVATSKE",
+                  "openaccess": null,
+                  "prism:issn": "18491561 03507165",
+                  "publishercopyright": "\u00a9 2018, Archaeological museum in Zagreb. All rights reserved.",
+                  "prism:issueIdentifier": "1",
+                  "subtypeDescription": "Article",
+                  "prism:publicationName": "Vjesnik Arheoloskog Muzeja u Zagrebu",
+                  "prism:pageRange": "37-54",
+                  "prism:endingPage": "54",
+                  "openaccessFlag": null,
+                  "prism:startingPage": "37",
+                  "dc:identifier": "SCOPUS_ID:85162728044",
+                  "dc:publisher": "Archaeological museum in Zagreb"
+            },
+            "idxterms": null,
+            "language": {
+                  "@xml:lang": "hrv"
+            },
+            "authkeywords": {
+                  "author-keyword": [
+                        {
+                              "@_fa": "true",
+                              "$": "anthropomorphic depictions"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "dance"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "Franjevac"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "Novigrad on Sava"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "pottery"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "prehistory"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "Vu\u010dedol"
+                        }
+                  ]
+            },
+            "subject-areas": {
+                  "subject-area": [
+                        {
+                              "@_fa": "true",
+                              "$": "Archeology (arts and humanities)",
+                              "@code": "1204",
+                              "@abbrev": "ARTS"
+                        },
+                        {
+                              "@_fa": "true",
+                              "$": "Archeology",
+                              "@code": "3302",
+                              "@abbrev": "SOCI"
+                        }
+                  ]
+            },
+            "authors": {
+                  "author": [
+                        {
+                              "ce:given-name": "Ivana",
+                              "preferred-name": {
+                                    "ce:given-name": "Ivana",
+                                    "ce:initials": "I.",
+                                    "ce:surname": "Tur\u010din",
+                                    "ce:indexed-name": "Tur\u010din I."
+                              },
+                              "@seq": "1",
+                              "ce:initials": "I.",
+                              "@_fa": "true",
+                              "affiliation": {
+                                    "@id": "121236478",
+                                    "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/121236478"
+                              },
+                              "ce:surname": "Tur\u010din",
+                              "@auid": "58338461900",
+                              "author-url": "https://api.elsevier.com/content/author/author_id/58338461900",
+                              "ce:indexed-name": "Turcin I."
+                        }
+                  ]
+            }
+      }
+}
