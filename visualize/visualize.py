@@ -4,6 +4,11 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import plotly.express as px
+import networkx as nx
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+import numpy as np
+import json
 
 #######################
 # Page configuration
@@ -17,29 +22,28 @@ alt.themes.enable("dark")
 
 
 #######################
-# Load data
-df_reshaped = pd.read_csv('us-population-2010-2019-reshaped.csv')
-
-
-#######################
 # Sidebar
 with st.sidebar:
     st.title('📚 Publication Recommendation')
-    
-    year_list = list(df_reshaped.year.unique())[::-1]
-    
-    selected_year = 2019
-    df_selected_year = df_reshaped[df_reshaped.year == selected_year]
-    df_selected_year_sorted = df_selected_year.sort_values(by="population", ascending=False)
 
     color_theme_list = ['blues', 'cividis', 'greens', 'inferno', 'magma', 'plasma', 'reds', 'rainbow', 'turbo', 'viridis']
     selected_color_theme = st.selectbox('Select a color theme', color_theme_list)
 
+    # Text input for searching
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
-
     my_input = st.text_input("Input a text here", st.session_state["my_input"])
+    
     submit = st.button("Search")
+
+    # Load the data from auto_complete.json
+    with open('auto_complete.json', 'r') as file:
+        autocomplete_data = json.load(file)
+        titles = [pub['title'] for pub in autocomplete_data['pubs']]
+    
+    # Dropdown menu for displaying publication titles
+    selected_title = st.selectbox("Select a publication title", titles)
+
 
 #######################
 # Plots
@@ -62,90 +66,141 @@ def make_heatmap(input_df, input_y, input_x, input_color, input_color_theme):
     # height=300
     return heatmap
 
-# Choropleth map
-def make_choropleth(input_df, input_id, input_column, input_color_theme):
-    choropleth = px.choropleth(input_df, locations=input_id, color=input_column, locationmode="USA-states",
-                               color_continuous_scale=input_color_theme,
-                               range_color=(0, max(df_selected_year.population)),
-                               scope="world",
-                               labels={'population':'Population'}
-                              )
-    return choropleth
+# Load data from publication.json with explicit encoding
+with open('publication.json', 'r', encoding='utf-8') as file:
+    publication_data = json.load(file)
 
-
-# Donut chart
-def make_donut(input_response, input_text, input_color):
-  if input_color == 'blue':
-      chart_color = ['#29b5e8', '#155F7A']
-  if input_color == 'green':
-      chart_color = ['#27AE60', '#12783D']
-  if input_color == 'orange':
-      chart_color = ['#F39C12', '#875A12']
-  if input_color == 'red':
-      chart_color = ['#E74C3C', '#781F16']
-    
-  source = pd.DataFrame({
-      "Topic": ['', input_text],
-      "% value": [100-input_response, input_response]
-  })
-  source_bg = pd.DataFrame({
-      "Topic": ['', input_text],
-      "% value": [100, 0]
-  })
-    
-  plot = alt.Chart(source).mark_arc(innerRadius=45, cornerRadius=25).encode(
-      theta="% value",
-      color= alt.Color("Topic:N",
-                      scale=alt.Scale(
-                          #domain=['A', 'B'],
-                          domain=[input_text, ''],
-                          # range=['#29b5e8', '#155F7A']),  # 31333F
-                          range=chart_color),
-                      legend=None),
-  ).properties(width=130, height=130)
-    
-  text = plot.mark_text(align='center', color="#29b5e8", font="Lato", fontSize=32, fontWeight=700, fontStyle="italic").encode(text=alt.value(f'{input_response} %'))
-  plot_bg = alt.Chart(source_bg).mark_arc(innerRadius=45, cornerRadius=20).encode(
-      theta="% value",
-      color= alt.Color("Topic:N",
-                      scale=alt.Scale(
-                          # domain=['A', 'B'],
-                          domain=[input_text, ''],
-                          range=chart_color),  # 31333F
-                      legend=None),
-  ).properties(width=130, height=130)
-  return plot_bg + plot + text
-
-# Convert population to text 
-def format_number(num):
-    if num > 1000000:
-        if not num % 1000000:
-            return f'{num // 1000000} M'
-        return f'{round(num / 1000000, 1)} M'
-    return f'{num // 1000} K'
-
-# Calculation year-over-year population migrations
-def calculate_population_difference(input_df, input_year):
-  selected_year_data = input_df[input_df['year'] == input_year].reset_index()
-  previous_year_data = input_df[input_df['year'] == input_year - 1].reset_index()
-  selected_year_data['population_difference'] = selected_year_data.population.sub(previous_year_data.population, fill_value=0)
-  return pd.concat([selected_year_data.states, selected_year_data.id, selected_year_data.population, selected_year_data.population_difference], axis=1).sort_values(by="population_difference", ascending=False)
-
-
-#######################
 # Dashboard Main Panel
 col = st.columns((4.5, 1), gap='medium')
 
 with col[0]:
     st.markdown('#### Title')
-    if submit:
-        st.session_state["my_input"] = my_input
-        st.write(my_input)
-    st.markdown('#### Abstract')
-    st.markdown('#### Link')
-    st.markdown('#### Affiliation')
+    st.write(publication_data['title'])
     
-    choropleth = make_choropleth(df_selected_year, 'states_code', 'population', selected_color_theme)
-    st.plotly_chart(choropleth, use_container_width=True)
-
+    st.markdown('#### Affiliations')
+    affiliations = [affiliation['affiliation'] for affiliation in publication_data['affilations']]
+    st.write(affiliations)
+    
+    st.markdown('#### Abstract')
+    st.write(publication_data['abstract'])
+    
+    st.markdown('#### Link')
+    st.write(publication_data['link'])
+    
     st.markdown('#### Recommend Publications')
+    
+    for rec_pub in publication_data['pub_rec']:
+        publication_id = rec_pub['id']
+        publication_title = rec_pub['title']
+        st.markdown(f"{publication_id} : <a href='#{publication_id}'>{publication_title}</a>", unsafe_allow_html=True)
+
+    # Plot network graph using NetworkX
+    node_graph = publication_data['node_graph']
+    edges = [(edge['source'], edge['target']) for edge in node_graph['edge']]
+    G = nx.DiGraph()
+    G.add_edges_from(edges)
+
+    # Layout nodes using Fruchterman-Reingold force-directed algorithm
+    pos = nx.spring_layout(G)
+
+    # Use plotly to visualize the network graph created using NetworkX
+    edge_trace = go.Scatter(
+        x=[],
+        y=[],
+        line=dict(width=1, color='#888'),
+        hoverinfo='text',
+        mode='lines',
+        text=[]  # Initialize text attribute as an empty list
+    )
+
+    for edge in G.edges():
+        x0, y0 = pos[edge[0]]
+        x1, y1 = pos[edge[1]]
+        edge_trace['x'] += tuple([x0, x1, None])
+        edge_trace['y'] += tuple([y0, y1, None])
+        weight = G[edge[0]][edge[1]].get('weight', 1)  # Get the weight attribute of the edge, default to 1 if not present
+        edge_trace['text'] += tuple([f'Weight: {weight}'])  # Append text to the list
+    
+    # Adding nodes to plotly scatter plot
+    node_trace = go.Scatter(
+        x=[],
+        y=[],
+        text=[],
+        mode='markers',
+        hoverinfo='text',
+        marker=dict(
+            showscale=True,
+            colorscale=st.selectbox("Select Color Theme", ["Viridis", "Cividis", "YlGnBu"]),  # User-selectable color theme
+            color=[],
+            size=20,
+            colorbar=dict(
+                thickness=10,
+                title='# Connections',
+                xanchor='left',
+                titleside='right'
+            ),
+            line=dict(width=0)))
+
+    for node in G.nodes():
+        x, y = pos[node]
+        node_trace['x'] += tuple([x])
+        node_trace['y'] += tuple([y])
+
+    for node, adjacencies in enumerate(G.adjacency()):
+        node_trace['marker']['color'] += tuple([len(adjacencies[1])])  # Coloring each node based on the number of connections 
+        node_info = f"{adjacencies[0]} # of connections: {len(adjacencies[1])}"
+        node_trace['text'] += tuple([node_info])
+    
+    # Plot the final figure
+    fig = go.Figure(data=[edge_trace, node_trace],
+                    layout=go.Layout(
+                        title='Network Graph',
+                        title_x=0.45,
+                        titlefont=dict(size=25),
+                        showlegend=False,
+                        hovermode='closest',
+                        margin=dict(b=20, l=5, r=5, t=40),
+                        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+                        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)))
+
+    st.plotly_chart(fig, use_container_width=True)  # Show the graph in streamlit
+
+    # Extract latitudes and longitudes from the node data
+    node_data = publication_data['node_graph']['node']
+    node_df = pd.DataFrame(node_data)
+
+    # Function to generate random latitude and longitude
+    def generate_random_lat_lng():
+        return np.random.uniform(-90, 90), np.random.uniform(-180, 180)
+
+    # Replace null values in latitude and longitude with random values
+    for i, row in node_df.iterrows():
+        for affiliation in row['affilations']:
+            if affiliation['lat'] is None:
+                affiliation['lat'] = generate_random_lat_lng()[0]
+            if affiliation['lng'] is None:
+                affiliation['lng'] = generate_random_lat_lng()[1]
+
+    # Convert nested affiliations into rows
+    rows = []
+    for i, row in node_df.iterrows():
+        for affiliation in row['affilations']:
+            rows.append({
+                'title': row['title'],
+                'id': row['id'],
+                'affiliation': affiliation['affiliation'],
+                'lat': affiliation['lat'],
+                'lng': affiliation['lng']
+            })
+
+    # Create DataFrame from the flattened rows
+    node_df_flat = pd.DataFrame(rows)
+
+    # Plot the scatter plot map
+    fig = px.scatter_mapbox(node_df_flat, lat="lat", lon="lng", hover_name="title",
+                            hover_data=["id", "affiliation"], zoom=3, height=500)
+
+    fig.update_layout(mapbox_style="open-street-map")
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
+    st.plotly_chart(fig, use_container_width=True)

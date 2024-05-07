@@ -1,0 +1,3174 @@
+{
+  "title": "Machine Learning Based Design of Railway Prestressed Concrete Sleepers",
+  "id": 13960,
+  "affilations": [
+    {
+      "lat": null,
+      "lng": null,
+      "affiliation": "Chulalongkorn University"
+    },
+    {
+      "lat": null,
+      "lng": null,
+      "affiliation": "University of Birmingham"
+    },
+    {
+      "lat": null,
+      "lng": null,
+      "affiliation": "University of Wollongong"
+    }
+  ],
+  "abstract": "© 2022 by the authors.The state-of-the-art design methods for railway prestressed concrete sleepers are currently based on the quasi-static stresses resulting from a simplification of dynamic wheel loads, and subsequently the quasi-static responses of concrete sleepers. This method has been widely used in practices to overcome the complexity of dynamic analysis and testing. A single load factor (or called dynamic impact factor) for a partial safety-factored design (or k factors for the test criteria) is commonly used to crudely account for dynamic train–track interactions over different levels of track irregularities. The dynamic impact factors for either design or testing are usually obtained from either (i) railway infrastructure managers (i.e., in EN 13230), or (ii) prescribed standardised factors (i.e., AS 1085.14, AREMA Chapter 30, JSA—JIS E 1201). The existing design concepts for prestressed concrete sleepers using either (i) an allowable stress design or (ii) the limit state design method require many iterations for calculations and optimisations. The design process to achieve optimal products suitable for track, operational, and environmental parameters is, thus, very time-consuming. On this ground, this study investigates the potential capability of machine learning (ML) to learn from large amounts of design data sets and then to facilitate the design and capacity prediction of railway prestressed concrete sleepers. Three ML algorithms are developed, namely deep learning, Bayesian Neural Network, and random forest. Through a combination of hand-calculated design data, industry design data, and experimental investigations in compliance with EN 13230, over 3000 sets of design data have been collected. These data sets are used to assimilate a comprehensive database for machine learning. Four indicators, namely mean squared error (MSE), root-mean-square error (RMSE), mean absolute error (MAE), and R2 are used to benchmark the accuracy and precision of machine learning models. Our results reveal that the random forest algorithm offers the best performance. The values of MSE, RMSE, MAE, and R2 are 0.54, 0.74, 0.25, and 0.99, respectively. Note that the Bayesian neural network also performs very well. In contrast, the deep learning algorithm performs worse than the others. The insight demonstrates machine learning’s capability to aid in the design of railway prestressed concrete sleepers, to satisfy both serviceability and ultimate limit states",
+  "link": "",
+  "pub_rec": [
+    {
+      "title": "Peritoneal dialysis care during the COVID-19 pandemic, ThailandInterventions de dialyse péritonéale en période de pandémie de COVID-19, ThaïlandeCuidados de diálisis peritoneal durante la pandemia de la COVID-19 en Tailandia",
+      "id": 16023,
+      "affilations": []
+    },
+    {
+      "title": "Is combining therapy with indomethacin and epinephrine useful for preventing post-ERCP pancreatitis? The answer from a meta-analysis",
+      "id": 8075,
+      "affilations": []
+    },
+    {
+      "title": "Determination of stimulating factors of wild Asian elephant (Elephas maximus) dispersal from the kaeng krachan national park to surrounding land use in Thailand",
+      "id": 8989,
+      "affilations": []
+    },
+    {
+      "title": "Immediate and long-term effects of a very-low-calorie diet on diabetes remission and glycemic control in obese Thai patients with type 2 diabetes mellitus",
+      "id": 4666,
+      "affilations": []
+    },
+    {
+      "title": "Pathological femoral fracture in a doe secondary to osteomalacia: A veterinary clinical case report",
+      "id": 5635,
+      "affilations": []
+    },
+    {
+      "title": "Computational design of SARS-CoV-2 peptide binders with better predicted binding affinities than human ACE2 receptor",
+      "id": 9598,
+      "affilations": []
+    },
+    {
+      "title": "Capability of single and double elements doped perovskite oxide catalysts in 5-hydroxymethyl furfural oxidation",
+      "id": 16371,
+      "affilations": []
+    },
+    {
+      "title": "Development of a Data-Driven Soft Sensor for Multivariate Chemical Processes Using Concordance Correlation Coefficient Subsets Integrated with Parallel Inverse-Free Extreme Learning Machine",
+      "id": 18110,
+      "affilations": []
+    },
+    {
+      "title": "The prevalence of normoalbuminuria and renal impairment in type 2 diabetes mellitus",
+      "id": 5469,
+      "affilations": []
+    },
+    {
+      "title": "Low-cost videolaryngoscope in response to COVID-19 pandemic",
+      "id": 8758,
+      "affilations": []
+    }
+  ],
+  "node_graph": {
+    "edge": [
+      {
+        "source": 13960,
+        "target": 12299,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 14112,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 9310,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 51,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 2211,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 2331,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 2439,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 2656,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 3360,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 4086,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 4191,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 4193,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 5556,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 5766,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 5944,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 7317,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 7721,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 7822,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 8015,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 8882,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 9016,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 9141,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 10494,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 10621,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 10788,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 11527,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 11737,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 12250,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 12273,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 14695,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 14788,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 15691,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 16325,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 16608,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 16685,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 16890,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 17994,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 18830,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19034,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19614,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19641,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19667,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19692,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 8909,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 16018,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 3428,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 18983,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 20039,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 1323,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 8549,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 12556,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 13338,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 13502,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 13774,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 13894,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 16016,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 17917,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 18093,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19130,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19187,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19270,
+        "weight": 2
+      },
+      {
+        "source": 13960,
+        "target": 19879,
+        "weight": 1
+      },
+      {
+        "source": 13960,
+        "target": 19462,
+        "weight": 1
+      }
+    ],
+    "node": [
+      {
+        "title": "The Impact of Data-Complexity and Team Characteristics on Performance in the Classification Model: Findings From a Collaborative Platform",
+        "id": 12299,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn Business School"
+          }
+        ]
+      },
+      {
+        "title": "Digital-Twins towards Cyber-Physical Systems: A Brief Survey",
+        "id": 14112,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Atria Institute of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Mongkut's University of Technology North Bangkok"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Pathumwan Institute of Technology"
+          }
+        ]
+      },
+      {
+        "title": "Reliability Quantification of Railway Electrification Mast Structure Considering Buckling",
+        "id": 9310,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Birmingham"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Harbin Institute of Technology"
+          }
+        ]
+      },
+      {
+        "title": "Chest X-ray analysis of tuberculosis by convolutional neural networks with affine transforms",
+        "id": 51,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Photo sharing service for recommending sightseeing places",
+        "id": 2211,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kanagawa Institute of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Defect Classification of Electronic Board Using Dense SIFT and CNN",
+        "id": 2331,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Technology Guwahati"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chubu University"
+          }
+        ]
+      },
+      {
+        "title": "Deep multi-label 3D ConvNet for breast cancer diagnosis in DBT with inversion augmentation",
+        "id": 2439,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Real-Time Polyps Segmentation for Colonoscopy Video Frames Using Compressed Fully Convolutional Network",
+        "id": 2656,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Aircraft Detection Based on Saliency Map and Convolution Neural Network",
+        "id": 3360,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The University of Tokyo"
+          }
+        ]
+      },
+      {
+        "title": "Occluded Facial Recognition with 2DPCA based Convolutional Neural Network",
+        "id": 4086,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulachomklao Royal Military Acade.my"
+          }
+        ]
+      },
+      {
+        "title": "Classification of titanium microstructure with fully convolutional neural networks",
+        "id": 4191,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Classification of pulmonary tuberculosis lesion with convolutional neural networks",
+        "id": 4193,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Universal Joint Feature Extraction for P300 EEG Classification Using Multi-Task Autoencoder",
+        "id": 5556,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Vidyasirimedhi Institute of Science and Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Worcester Polytechnic Institute"
+          }
+        ]
+      },
+      {
+        "title": "Semantic segmentation on remotely sensed images using an enhanced global convolutional network with channel attention and domain specific transfer learning",
+        "id": 5766,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Geo-Informatics and Space Technology Development Agency"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
+          }
+        ]
+      },
+      {
+        "title": "Neuroevolution Architecture Backbone for X-ray Object Detection",
+        "id": 5944,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The University of Tokyo"
+          }
+        ]
+      },
+      {
+        "title": "Self-Identification Deep Learning ARIMA",
+        "id": 7317,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Visual-based Items Recommendation Using Deep Neural Network",
+        "id": 7721,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Al Qassim University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Shanghai University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Semantic labeling in remote sensing corpora using feature fusion-based enhanced global convolutional network with high-resolution representations and depthwise atrous convolution",
+        "id": 7822,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Geo-Informatics and Space Technology Development Agency"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
+          }
+        ]
+      },
+      {
+        "title": "Development of Rhythm-based and Morphology-based Algorithm for Atrial Fibrillation Detection From Single Lead ECG Signal",
+        "id": 8015,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Combination of B-mode and color Doppler mode using mutual information including canonical correlation analysis for breast cancer diagnosis",
+        "id": 8882,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Angiodysplasia Segmentation on Capsule Endoscopy Images Using AlbuNet with Squeeze-and-Excitation Blocks",
+        "id": 9016,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Deep learning image-based defect detection in high voltage electrical equipment",
+        "id": 9141,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Al Qassim University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chongqing University"
+          }
+        ]
+      },
+      {
+        "title": "Deep learning-based visual defect-inspection system for reinforced concrete bridge substructure: a case of Thailand’s department of highways",
+        "id": 10494,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn Business School"
+          }
+        ]
+      },
+      {
+        "title": "Multi-scale Xception based depthwise separable convolution for single image superresolution",
+        "id": 10621,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Osaka University"
+          }
+        ]
+      },
+      {
+        "title": "Fast obstacle detection system for the blind using depth image and machine learning",
+        "id": 10788,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Automatic Sleep Data Scoring by Artificial Intelligence: A Pilot Study in Thai Population",
+        "id": 11527,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Chulalongkorn Memorial Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "A comparative study of window size and channel arrangement on eeg-emotion recognition using deep cnn",
+        "id": 11737,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Department of Computer Science and Engineering"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Osaka University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universiteit Twente"
+          }
+        ]
+      },
+      {
+        "title": "Emotion recognition of students during e-learning through online conference meeting",
+        "id": 12250,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Silpakorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kanagawa Institute of Technology"
+          }
+        ]
+      },
+      {
+        "title": "Generative adversarial network for video anomaly detection",
+        "id": 12273,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Multimodal Biometrics Recognition Using a Deep Convolutional Neural Network with Transfer Learning in Surveillance Videos",
+        "id": 14695,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tokai University"
+          }
+        ]
+      },
+      {
+        "title": "Pulmonary Lesion Classification Framework Using the Weighted Ensemble Classification with Random Forest and CNN Models for EBUS Images",
+        "id": 14788,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Improved image classification explainability with high-accuracy heatmaps",
+        "id": 15691,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "ICIP 2022 CHALLENGE ON PARASITIC EGG DETECTION AND CLASSIFICATION IN MICROSCOPIC IMAGES: DATASET, METHODS AND RESULTS",
+        "id": 16325,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Bristol"
+          }
+        ]
+      },
+      {
+        "title": "Modelling the Surface Roughness of Steel after Laser hardening by using 2D Visibility Network, Convolutional neural Networks and Genetic ProgrammingМОДЕЛИРАЊЕ ХРАПАВОСТИ ПОВРШИНЕ ЧЕЛИКА НАКОН ЛАСЕРСКОГ КАЉЕЊА КОРИШЋЕЊЕМ 2Д МРЕЖЕ ВИДЉИВОСТИ, КОНВОЛУЦИОНИХ НЕУРОНСКИХ МРЕЖА И ГЕНЕТСКОГ ПРОГРАМИРАЊА",
+        "id": 16608,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Univerza v Novem Mestu"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Univerza v Ljubljani"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Alma Mater Studiorum Università di Bologna"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Technische Universität Berlin"
+          }
+        ]
+      },
+      {
+        "title": "Data augmentation for stock return prediction",
+        "id": 16685,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "The Bangkok Urbanscapes Dataset for Semantic Urban Scene Understanding Using Enhanced Encoder-Decoder With Atrous Depthwise Separable A1 Convolutional Neural Networks",
+        "id": 16890,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chubu University"
+          }
+        ]
+      },
+      {
+        "title": "Enhancement of VGG16 model with multi-view and spatial dropout for classification of mosquito vectors",
+        "id": 17994,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Real-time gastric intestinal metaplasia diagnosis tailored for bias and noisy-labeled data with multiple endoscopic imaging",
+        "id": 18830,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Exploring the Spatial Effects of Built Environment on Quality of Life Related Transportation by Integrating GIS and Deep Learning Approaches",
+        "id": 19034,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chubu University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Thammasat University"
+          }
+        ]
+      },
+      {
+        "title": "MLP-UNet: Glomerulus Segmentation",
+        "id": 19614,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Nagoya City University East Medical Center"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Harbin University of Science and Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Technology Guwahati"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chubu University"
+          }
+        ]
+      },
+      {
+        "title": "Real-Time Identification of Malignant Biliary Strictures on Cholangioscopy Images Using Explainable Convolutional Neural Networks With Heatmaps",
+        "id": 19641,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "SENext: Squeeze-and-ExcitationNext for Single Image Super-Resolution",
+        "id": 19667,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Osaka University"
+          }
+        ]
+      },
+      {
+        "title": "Smart Trash Classification Machine",
+        "id": 19692,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "Automated Firearm Classification from Bullet Markings Using Deep Learning",
+        "id": 8909,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Thammasat University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Central Police Forensic Science Division"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ministry of Justice"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ruamrudee International School"
+          }
+        ]
+      },
+      {
+        "title": "Using Automatic Speech Recognition to Assess Thai Speech Language Fluency in the Montreal Cognitive Assessment (MoCA)",
+        "id": 16018,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Chulalongkorn Memorial Hospital"
+          }
+        ]
+      },
+      {
+        "title": "A highly resolved food web for insect seed predators in a species-rich tropical forest",
+        "id": 3428,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Smithsonian Tropical Research Institute"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Turun yliopisto"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad de Panamá"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Michigan State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sveriges lantbruksuniversitet"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Oxford"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute of Entomology, Biology Centre of the Academy of Sciences of the Czech Republic"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Reading"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Jihočeská Univerzita v Českých Budějovicích"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Smithsonian National Museum of Natural History"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of San Diego"
+          }
+        ]
+      },
+      {
+        "title": "Design for Manufacture and Assembly of Digital Fabrication and Additive Manufacturing in Construction: A Review",
+        "id": 18983,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Rajamangala University of TechnologyThanyaburi"
+          }
+        ]
+      },
+      {
+        "title": "Digital Twins for Managing Railway Bridge Maintenance, Resilience, and Climate Change Adaptation",
+        "id": 20039,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Birmingham"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Wollongong"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Prince of Songkla University"
+          }
+        ]
+      },
+      {
+        "title": "New insights from Thailand into the maternal genetic history of Mainland Southeast Asia",
+        "id": 1323,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Khon Kaen University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chiang Mai University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Ferrara"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Naresuan University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Max-Planck-Institut für Evolutionäre Anthropologie"
+          }
+        ]
+      },
+      {
+        "title": "W+W- boson pair production in proton-proton collisions at s =13 TeV",
+        "id": 8549,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Rheinisch-Westfälische Technische Hochschule Aachen"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tata Institute of Fundamental Research, Mumbai"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli studi di Bari Aldo Moro"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Pavia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "College of Engineering and Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Science"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institut Pluridisciplinaire Hubert Curien"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Milli Savunma Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Science, University of Split"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute for Particle Physics Phenomenology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "State Key Laboratory of Nuclear Physics and Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Purdue University Northwest"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Rutgers University–New Brunswick"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Academy of Scientific Research &amp; Technology, Cairo"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Trieste"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Perugia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Genova"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Bologna"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Catania"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Bari"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Milano-Bicocca"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Torino"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Pavia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Firenze"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Pisa"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Narodowe Centrum Badań Jądrowych, Otwock"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Napoli"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "CSFNSM Centro Siciliano di Fisica Nuclear e Struttura della Materia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Padova"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Shoolini University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Science and Technology of Mazandaran, Behshahr"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Université Paris-Saclay"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Laboratoire Leprince-Ringuet"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Institute of Science Education and Research"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Necmettin Erbakan Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sinop Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Şırnak University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Pîrî Reis Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "İstanbul Aydın Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Karamanoğlu Mehmetbey Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bingöl Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ilia State University (ISU)"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute for Scintillation Materials of NAS of Ukraine"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Technology Bhubaneswar"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Science Education and Research Pune"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Karlsruher Institut für Technologie"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Stefan-Meyer-Institut für Subatomare Physik"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ozyegin University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Adiyaman Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Erzincan Binali Yıldırım Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture, University of Split"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Texas A&amp;M University at Qatar"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad San Francisco de Quito"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Escuela Politécnica Nacional"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Georgian Technical University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Recinto Universitario de Mayagüez"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Cyprus"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Eastern University, Sri Lanka"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Ruhuna"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Colombo"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Riga Technical University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Yerevan Physics Institute"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Institute of Chemical Physics and Biophysics, Tallinn"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Belgrade"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Montenegro"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institut za Nuklearne Nauke Vinca"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institut fiziki vysokikh energii"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Research Nuclear University MEPhI"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Quaid-i-Azam University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute for Nuclear Problems of Belarusian State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Vilniaus Universitetas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad de Antioquia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad de Los Andes, Colombia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bhabha Atomic Research Centre"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universiteit Gent"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad de Sonora"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Çukurova Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sapienza Università di Roma"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Wisconsin-Madison"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University at Buffalo, The State University of New York"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "California Institute of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute for Nuclear Research of the Russian Academy of Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad Autónoma de San Luis Potosí"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Scuola Normale Superiore di Pisa"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Deutsches Elektronen-Synchrotron (DESY)"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of California, San Diego"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Helsinki Institute of Physics"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade Estadual de Campinas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Saha Institute of Nuclear Physics"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of California, Riverside"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Hyderabad"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Minnesota Twin Cities"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Delhi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of California, Santa Barbara"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universiti Malaya"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National and Kapodistrian University of Athens"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università di Pisa"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Northeastern University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istanbul Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universität Hamburg"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Alma Mater Studiorum Università di Bologna"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Isfahan University of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Consejo Nacional de Ciencia y Tecnologia Mexico"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Marmara Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Carnegie Mellon University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sejong University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universite de Haute Alsace"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Seoul"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute of High Energy Physics Chinese Academy of Science"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Illinois at Chicago"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of California, Los Angeles"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Fayoum University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Chinese Academy of Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Politecnico di Bari"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Rochester"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Vrije Universiteit Brussel"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad Autónoma de Madrid"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Nebraska–Lincoln"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Lawrence Livermore National Laboratory"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Hungarian University of Agriculture and Life Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "IN2P3 - Institut National de Physique Nucléaire et de Physique Des Particules"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "ETH Zürich"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Technology Madras"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The University of Alabama"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tsinghua University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Southampton"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institut fur Hochenergiephysik"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Eötvös Loránd Tudományegyetem"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Genova"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Hanyang University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Benemerita Universidad Autonoma de Puebla"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Central University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Iowa"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tomsk Polytechnic University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Budker Institute of Nuclear Physics of the Siberian Branch of the RAS"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Université Claude Bernard Lyon 1"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The British University in Egypt"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Rutherford Appleton Laboratory"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Laboratório de Instrumentacao e Física Experimental de Partículas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Massachusetts Institute of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "İstanbul Teknik Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Virginia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Firenze"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istituto Nazionale di Fisica Nucleare - INFN"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Notre Dame"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Texas Tech University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sun Yat-Sen University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi della Basilicata"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Bristol"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Brunel University London"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Canterbury"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Texas A&amp;M University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Hacettepe Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The Catholic University of America"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Brandenburgische Technische Universität Cottbus"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Maryland, College Park"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Nanjing Normal University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Paul Scherrer Institut"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sofia University St. Kliment Ohridski"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Organisation Européenne pour la Recherche Nucléaire"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Boston University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ente Per Le Nuove Tecnologie, l'Energia e l'Ambiente"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Monash University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Visva-Bharati University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Alikhanov Institute for Theoretical and Experimental Physics"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Panjab University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Trieste"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Technische Universität Wien"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Iranian Research Institute for Fundamental Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "AGH University of Krakow"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Centro de Investigacion y de Estudios Avanzados del Instituto Politécnico Nacional"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Napoli Federico II"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Peter the Great St. Petersburg Polytechnic University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Yonsei University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tomsk State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ain Shams University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Charles University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "INFN, Laboratori Nazionali Di Frascati"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The University of Tennessee, Knoxville"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Kansas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Florida International University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad de Cantabria"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Imperial College London"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Petersburg Nuclear Physics Institute (PNPI)"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade Federal de Pelotas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of California, Davis"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "LUT University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kafkas Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Technology Bombay"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Indian Institute of Science"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Florida"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Fermi National Accelerator Laboratory"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Beihang University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Warsaw"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Seoul National University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute for Nuclear Research and Nuclear Energy Bulgarian Academy of Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universiteit Antwerpen"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kyungpook National University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universität Zürich"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Milano-Bicocca"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Torino"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "T.C. Beykent Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad Iberoamericana"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Brown University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Baylor University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Mississippi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Florida Institute of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Catania"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Fudan University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Istanbul Bilgi Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Wayne State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Purdue University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade Federal de Mato Grosso do Sul"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "P.N. Lebedev Physical Institute of the Russian Academy of Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Izmir Yüksek Teknoloji Enstitüsü"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Science Center Kharkov Institute of Physics and Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bethel University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Mersin Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Centro Brasileiro de Pesquisas Físicas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Cornell University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sungkyunkwan University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Lomonosov Moscow State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Northwestern University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chonnam National University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidad de Oviedo"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade Federal do Rio Grande do Sul"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Yakın Doğu Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Boğaziçi Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The University of Auckland"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade do Estado do Rio de Janeiro"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Taiwan University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Rice University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Korea University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Johns Hopkins University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University College Dublin"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Joint Institute for Nuclear Research, Dubna"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Ioannina"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Debreceni Egyetem"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Middle East Technical University (METU)"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Zhejiang University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Vanderbilt University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Mimar Sinan Güzel Sanatlar Üniversitesi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Politechnika Warszawska"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi del Piemonte Orientale \"Amedeo Avogadro\""
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Wigner Research Centre for Physics"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The Ohio State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Princeton University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Perugia"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Helsingin Yliopisto"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Technical University of Athens"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Siena"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Atommagkutató Intézet"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute of Physics Bhubaneswar"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Florida State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Novosibirsk State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kyung Hee University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Universidade Federal do ABC"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Centre for Scientific Research \"DEMOKRITOS\""
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institut Ruđer Bošković"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Université Catholique de Louvain"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kansas State University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università degli Studi di Padova"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Moscow Institute of Physics and Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Colorado Boulder"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Université Libre de Bruxelles"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bozok Universitetesi Rektörlügü"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Università G. Marconi"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "G.H.G. Khalsa College"
+          }
+        ]
+      },
+      {
+        "title": "Predictive Analysis of the Building Damage from the 2011 Great East Japan Tsunami Using Decision Tree Classification Related Algorithms",
+        "id": 12556,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tohoku University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sirindhorn International Institute of Technology, Thammasat University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Praedicat, Inc."
+          }
+        ]
+      },
+      {
+        "title": "Mapping groundwater potential zones in Kanchanaburi Province, Thailand by integrating of analytic hierarchy process, frequency ratio, and random forest",
+        "id": 13338,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Agriculture and Forestry, Hue University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Queensland University of Technology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bac Lieu University"
+          }
+        ]
+      },
+      {
+        "title": "Development and validation of a prognostic prediction model including the minor lymphatic pathway for distant metastases in cervical cancer patients",
+        "id": 13502,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Ramathibodi Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Siriraj Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Prince of Songkia University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Thammasat University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chiang Mai University"
+          }
+        ]
+      },
+      {
+        "title": "Global review of groundwater potential models in the last decade: Parameters, model techniques, and validation",
+        "id": 13774,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Agriculture and Forestry, Hue University"
+          }
+        ]
+      },
+      {
+        "title": "Acceptance and Perception of Artificial Intelligence Usability in Eye Care (APPRAISE) for Ophthalmologists: A Multinational Perspective",
+        "id": 13894,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The Chinese University of Hong Kong, Shenzhen"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Macquarie University Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Seoul National University Bundang Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Duke-NUS Medical School"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Southend University Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chang Gung Memorial Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Kagoshima University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Melbourne"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University Hospitals Birmingham NHS Foundation Trust"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tsinghua University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sankara Nethralaya"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Uniwersytet Warminsko-Mazurski w Olsztynie"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Singapore Eye Research Institute"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Illinois College of Medicine"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Rangsit University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "King Chulalongkorn Memorial Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Sun Yat-Sen University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National University of Singapore"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Oregon Health &amp; Science University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Moorfields Eye Hospital NHS Foundation Trust"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bascom Palmer Eye Institute"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Washington"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Copenhagen University Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Doheny Eye Institute"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "UCL Institute of Ophthalmology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine and Health"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tel Aviv Sourasky Medical Center"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chinese University of Hong Kong"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Seoul National University College of Medicine"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute for Research in Ophthalmology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "OasisEye Specialists"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Asociados de Macula"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Oculocare Medical AG"
+          }
+        ]
+      },
+      {
+        "title": "Assisting Multitargeted Ligand Affinity Prediction of Receptor Tyrosine Kinases Associated Nonsmall Cell Lung Cancer Treatment with Multitasking Principal Neighborhood Aggregation",
+        "id": 16016,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Vidyasirimedhi Institute of Science and Technology"
+          }
+        ]
+      },
+      {
+        "title": "Experiments of Supervised Learning and Semi-Supervised Learning in Thai Financial News Sentiment: A Comparative Study",
+        "id": 17917,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn Business School"
+          }
+        ]
+      },
+      {
+        "title": "Determination of conditioning factors for mapping nickel contamination susceptibility in groundwater in Kanchanaburi Province, Thailand, using random forest and maximum entropy",
+        "id": 18093,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "University of Agriculture and Forestry, Hue University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Queensland University of Technology"
+          }
+        ]
+      },
+      {
+        "title": "APASL-ACLF Research Consortium–Artificial Intelligence (AARC-AI) model precisely predicts outcomes in acute-on-chronic liver failure patients",
+        "id": 19130,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Beijing YouAn Hospital, Capital Medical University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Institute of Liver and Biliary Sciences"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National University Health System"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Siksha O Anusandhan (Deemed to be University)"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "302 Hospital of People's Liberation Army"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "The Aga Khan University Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Lokmanya Tilak Municipal General Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Bangabandhu Sheikh Mujib Medical University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Hallym University, College of Medicine"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Tongji Medical College"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Christian Medical College, Vellore"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Postgraduate Institute of Medical Education &amp; Research, Chandigarh"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Hospital Selayang"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "St. John’s Medical College"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Nork Clinical Hospital of Infectious Diseases"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "VGM Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Global Hospitals"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Medistra Hospital"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "DMC and Hospital"
+          }
+        ]
+      },
+      {
+        "title": "PARP1PRED: A WEB SERVER FOR SCREENING THE BIOACTIVITY OF INHIBITORS AGAINST DNA REPAIR ENZYME PARP-1",
+        "id": 19187,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine Ramathibodi Hospital, Mahidol University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Faculty of Medicine, Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Snowflake Inc."
+          }
+        ]
+      },
+      {
+        "title": "Sleep Behavior Classification Based on Clusters of Sleep Quality",
+        "id": 19270,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          }
+        ]
+      },
+      {
+        "title": "On Hyperparameter Optimization of Machine Learning Methods Using a Bayesian Optimization Algorithm to Predict Work Travel Mode Choice",
+        "id": 19879,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Politechnika Wroclawska"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "VSB – Technical University of Ostrava"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Uniwersytet Slaski w Katowicach"
+          }
+        ]
+      },
+      {
+        "title": "GNSS rover receivers’ horizontal positioning accuracy assessments based on NRTK-VRS surveying",
+        "id": 19462,
+        "affilations": [
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Chulalongkorn University"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "National Institute of Metrology"
+          },
+          {
+            "lat": null,
+            "lng": null,
+            "affiliation": "Royal Thai Survey Department"
+          }
+        ]
+      }
+    ]
+  }
+}
