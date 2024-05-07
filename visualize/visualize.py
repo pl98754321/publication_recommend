@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import numpy as np
 import json
+import pydeck as pdk
 
 #######################
 # Page configuration
@@ -36,13 +37,18 @@ with st.sidebar:
     
     submit = st.button("Search")
 
-    # Load the data from auto_complete.json
     with open('auto_complete.json', 'r') as file:
         autocomplete_data = json.load(file)
         titles = [pub['title'] for pub in autocomplete_data['pubs']]
-    
-    # Dropdown menu for displaying publication titles
-    selected_title = st.selectbox("Select a publication title", titles)
+        ids = [pub['id'] for pub in autocomplete_data['pubs']]
+
+        # Dropdown menu for displaying publication titles
+        selected_title = st.selectbox("auto complete", titles)
+
+        # Create links that redirect to the corresponding IDs
+        for title, id in zip(titles, ids):
+            if title == selected_title:
+                st.markdown(f'<a href="#{id}">{title}</a>', unsafe_allow_html=True)
 
 
 #######################
@@ -202,5 +208,53 @@ with col[0]:
 
     fig.update_layout(mapbox_style="open-street-map")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-
+    st.markdown('#### Affiliations scatter map')
     st.plotly_chart(fig, use_container_width=True)
+
+    #still not work
+    # Extract the node data
+    nodes = publication_data['node_graph']['node']
+
+    # Prepare data for the map
+    map_data = {
+        "title": [],
+        "lat": [],
+        "lng": [],
+        "affiliation": []
+    }
+
+    for node in nodes:
+        map_data["title"].append(node["title"])
+        if node["affilations"][0]["lat"] is not None and node["affilations"][0]["lng"] is not None:
+            map_data["lat"].append(node["affilations"][0]["lat"])
+            map_data["lng"].append(node["affilations"][0]["lng"])
+        else:
+            map_data["lat"].append(0)  # Replace null values with 0
+            map_data["lng"].append(0)  # Replace null values with 0
+        map_data["affiliation"].append(node["affilations"][0]["affiliation"])
+
+    # Create a DataFrame from the map data
+    df = pd.DataFrame(map_data)
+
+    # Define a layer to display on the map
+    layer = pdk.Layer(
+        "ScatterplotLayer",
+        df,
+        get_position=["lng", "lat"],
+        get_color=[255, 0, 0],
+        get_radius=5000,
+        pickable=True,
+    )
+
+    # Set the viewport location
+    view_state = pdk.ViewState(latitude=0, longitude=0, zoom=1)
+
+    # Render the map
+    r = pdk.Deck(
+        layers=[layer],
+        initial_view_state=view_state,
+        tooltip={"text": "{title}\nAffiliation: {affiliation}"},
+    )
+
+    # Save the map to an HTML file
+    st.pydeck_chart(r)
