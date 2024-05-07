@@ -5,3 +5,4 @@ ds/Project
 __pycache__
 logging.log
 *.npy
+.env
