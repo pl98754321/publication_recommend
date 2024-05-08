@@ -10,6 +10,7 @@ import plotly.graph_objects as go
 import numpy as np
 import json
 import pydeck as pdk
+import random
 
 #######################
 # Page configuration
@@ -48,7 +49,7 @@ with st.sidebar:
         # Create links that redirect to the corresponding IDs
         for title, id in zip(titles, ids):
             if title == selected_title:
-                st.markdown(f'<a href="#{id}">{title}</a>', unsafe_allow_html=True)
+                st.markdown(f'<a href="#{id}">Go</a>', unsafe_allow_html=True)
 
 
 #######################
@@ -171,90 +172,38 @@ with col[0]:
 
     st.plotly_chart(fig, use_container_width=True)  # Show the graph in streamlit
 
-    # Extract latitudes and longitudes from the node data
-    node_data = publication_data['node_graph']['node']
-    node_df = pd.DataFrame(node_data)
+    GREAT_CIRCLE_LAYER_DATA = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/flights.json"  # noqa
 
-    # Function to generate random latitude and longitude
-    def generate_random_lat_lng():
-        return np.random.uniform(-90, 90), np.random.uniform(-180, 180)
+    df = pd.read_json(GREAT_CIRCLE_LAYER_DATA)
 
-    # Replace null values in latitude and longitude with random values
-    for i, row in node_df.iterrows():
-        for affiliation in row['affilations']:
-            if affiliation['lat'] is None:
-                affiliation['lat'] = generate_random_lat_lng()[0]
-            if affiliation['lng'] is None:
-                affiliation['lng'] = generate_random_lat_lng()[1]
+    # Use pandas to prepare data for tooltip
+    df["from_name"] = df["from"].apply(lambda f: f["name"])
+    df["to_name"] = df["to"].apply(lambda t: t["name"])
 
-    # Convert nested affiliations into rows
-    rows = []
-    for i, row in node_df.iterrows():
-        for affiliation in row['affilations']:
-            rows.append({
-                'title': row['title'],
-                'id': row['id'],
-                'affiliation': affiliation['affiliation'],
-                'lat': affiliation['lat'],
-                'lng': affiliation['lng']
-            })
-
-    # Create DataFrame from the flattened rows
-    node_df_flat = pd.DataFrame(rows)
-
-    # Plot the scatter plot map
-    fig = px.scatter_mapbox(node_df_flat, lat="lat", lon="lng", hover_name="title",
-                            hover_data=["id", "affiliation"], zoom=3, height=500)
-
-    fig.update_layout(mapbox_style="open-street-map")
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-    st.markdown('#### Affiliations scatter map')
-    st.plotly_chart(fig, use_container_width=True)
-
-    #still not work
-    # Extract the node data
-    nodes = publication_data['node_graph']['node']
-
-    # Prepare data for the map
-    map_data = {
-        "title": [],
-        "lat": [],
-        "lng": [],
-        "affiliation": []
-    }
-
-    for node in nodes:
-        map_data["title"].append(node["title"])
-        if node["affilations"][0]["lat"] is not None and node["affilations"][0]["lng"] is not None:
-            map_data["lat"].append(node["affilations"][0]["lat"])
-            map_data["lng"].append(node["affilations"][0]["lng"])
-        else:
-            map_data["lat"].append(0)  # Replace null values with 0
-            map_data["lng"].append(0)  # Replace null values with 0
-        map_data["affiliation"].append(node["affilations"][0]["affiliation"])
-
-    # Create a DataFrame from the map data
-    df = pd.DataFrame(map_data)
-
-    # Define a layer to display on the map
+    # Define a layer to display on a map
     layer = pdk.Layer(
-        "ScatterplotLayer",
+        "GreatCircleLayer",
         df,
-        get_position=["lng", "lat"],
-        get_color=[255, 0, 0],
-        get_radius=5000,
         pickable=True,
+        get_stroke_width=12,
+        get_source_position="from.coordinates",
+        get_target_position="to.coordinates",
+        get_source_color=[64, 255, 0],
+        get_target_color=[0, 128, 200],
+        auto_highlight=True,
     )
 
     # Set the viewport location
-    view_state = pdk.ViewState(latitude=0, longitude=0, zoom=1)
+    view_state = pdk.ViewState(latitude=50, longitude=-40, zoom=1, bearing=0, pitch=0)
 
-    # Render the map
+    # Render
     r = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
-        tooltip={"text": "{title}\nAffiliation: {affiliation}"},
+        tooltip={"text": "{from_name} to {to_name}"},
     )
+    r.picking_radius = 10
 
-    # Save the map to an HTML file
+
+    # Display the map in Streamlit
     st.pydeck_chart(r)
