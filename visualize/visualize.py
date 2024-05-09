@@ -73,6 +73,46 @@ def make_heatmap(input_df, input_y, input_x, input_color, input_color_theme):
     # height=300
     return heatmap
 
+
+def transform_data(input_data):
+    transformed_data = []
+    
+    # Extract 'from' affiliation
+    from_affiliation = input_data['affilations'][0]
+    if from_affiliation['lat'] is not None and from_affiliation['lng'] is not None:
+        from_data = {
+            "from": {
+                "name": from_affiliation['affiliation'],
+                "coordinates": [
+                    from_affiliation['lng'],
+                    from_affiliation['lat']
+                ]
+            }
+        }
+    else:
+        return []
+
+    transformed_data.append(from_data)
+
+    # Extract 'to' affiliations from node_graph
+    node_graph = input_data.get('node_graph', {}).get('node', [])
+    for node in node_graph:
+        for to_affiliation in node['affilations']:
+            if to_affiliation['lat'] is not None and to_affiliation['lng'] is not None:
+                to_data = {
+                    "to": {
+                        "name": to_affiliation['affiliation'],
+                        "coordinates": [
+                            to_affiliation['lng'],
+                            to_affiliation['lat']
+                        ]
+                    }
+                }
+                transformed_data.append({**from_data, **to_data})
+
+    return transformed_data[1:]
+
+
 # Load data from publication.json with explicit encoding
 with open('publication.json', 'r', encoding='utf-8') as file:
     publication_data = json.load(file)
@@ -172,13 +212,13 @@ with col[0]:
 
     st.plotly_chart(fig, use_container_width=True)  # Show the graph in streamlit
 
-    GREAT_CIRCLE_LAYER_DATA = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/flights.json"  # noqa
-
-    df = pd.read_json(GREAT_CIRCLE_LAYER_DATA)
-
+    #GREAT_CIRCLE_LAYER_DATA = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/flights.json"  # noqa
+    
+    df = transform_data(publication_data)
+    
     # Use pandas to prepare data for tooltip
-    df["from_name"] = df["from"].apply(lambda f: f["name"])
-    df["to_name"] = df["to"].apply(lambda t: t["name"])
+    #df["from_name"] = df["from"].apply(lambda f: f["name"])
+    #df["to_name"] = df["to"].apply(lambda t: t["name"])
 
     # Define a layer to display on a map
     layer = pdk.Layer(
@@ -200,7 +240,7 @@ with col[0]:
     r = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
-        tooltip={"text": "{from_name} to {to_name}"},
+        #tooltip={"text": "{from_name} to {to_name}"},
     )
     r.picking_radius = 10
 
