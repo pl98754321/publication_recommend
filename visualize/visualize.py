@@ -1,5 +1,7 @@
 #######################
 # Import libraries
+import re
+import requests
 import streamlit as st
 import pandas as pd
 import altair as alt
@@ -11,6 +13,7 @@ import numpy as np
 import json
 import pydeck as pdk
 import random
+from streamlit_javascript import st_javascript
 
 #######################
 # Page configuration
@@ -25,54 +28,36 @@ alt.themes.enable("dark")
 
 #######################
 # Sidebar
+import streamlit as st
+import requests
+
+link_style = "text-decoration: none; color: #1E88E5; font-weight: bold; font-size: 16px; margin-bottom: 10px;"
+
 with st.sidebar:
     st.title('📚 Publication Recommendation')
-
-    color_theme_list = ['blues', 'cividis', 'greens', 'inferno', 'magma', 'plasma', 'reds', 'rainbow', 'turbo', 'viridis']
-    selected_color_theme = st.selectbox('Select a color theme', color_theme_list)
 
     # Text input for searching
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
     my_input = st.text_input("Input a text here", st.session_state["my_input"])
-    
+
     submit = st.button("Search")
 
-    with open('auto_complete.json', 'r') as file:
-        autocomplete_data = json.load(file)
-        titles = [pub['title'] for pub in autocomplete_data['pubs']]
-        ids = [pub['id'] for pub in autocomplete_data['pubs']]
-
-        # Dropdown menu for displaying publication titles
-        selected_title = st.selectbox("auto complete", titles)
-
-        # Create links that redirect to the corresponding IDs
-        for title, id in zip(titles, ids):
-            if title == selected_title:
-                st.markdown(f'<a href="#{id}">Go</a>', unsafe_allow_html=True)
-
+    # Make request to the auto_complete endpoint only when submit button is clicked
+    if submit:
+        response = requests.get('http://localhost:8081/auto_complete', params={'query': my_input})
+        if response.status_code == 200:
+            autocomplete_data = response.json()
+            pubs = autocomplete_data['pubs']
+            st.markdown("Top results")
+            # Display publication titles as clickable links with styling
+            i = 1
+            for pub in pubs:
+                st.write(f'{i}. <a href="#{pub["id"]}" target="_blank" style="{link_style}">{pub["title"]}</a>', unsafe_allow_html=True)
+                i += 1
 
 #######################
 # Plots
-
-# Heatmap
-def make_heatmap(input_df, input_y, input_x, input_color, input_color_theme):
-    heatmap = alt.Chart(input_df).mark_rect().encode(
-            y=alt.Y(f'{input_y}:O', axis=alt.Axis(title="Year", titleFontSize=18, titlePadding=15, titleFontWeight=900, labelAngle=0)),
-            x=alt.X(f'{input_x}:O', axis=alt.Axis(title="", titleFontSize=18, titlePadding=15, titleFontWeight=900)),
-            color=alt.Color(f'max({input_color}):Q',
-                             legend=None,
-                             scale=alt.Scale(scheme=input_color_theme)),
-            stroke=alt.value('black'),
-            strokeWidth=alt.value(0.25),
-        ).properties(width=900
-        ).configure_axis(
-        labelFontSize=12,
-        titleFontSize=12
-        ) 
-    # height=300
-    return heatmap
-
 
 def transform_data(input_data):
     transformed_data = []
@@ -117,10 +102,43 @@ def transform_data(input_data):
 with open('publication.json', 'r', encoding='utf-8') as file:
     publication_data = json.load(file)
 
+# Function to extract pub_id from URL
+def extract_pub_id(url):
+    match = re.search(r'#(\d+)', url)
+    if match:
+        return match.group(1)
+    else:
+        return None
+
+url = st_javascript("await fetch('').then(r => window.parent.location.href)")
+
+# Extract pub_id from the URL
+pub_id = extract_pub_id(url)
+
+if pub_id:
+    api_url = f"http://localhost:8081/publication/{pub_id}"
+
+    # Make GET request to the API endpoint
+    response = requests.get(api_url)
+    print(pub_id)
+    if response.status_code == 200:
+        # If request is successful, load the JSON data
+        publication_data = response.json()
+
+        # Write the obtained data to publication.json
+        with open('publication.json', 'w', encoding='utf-8') as file:
+            json.dump(publication_data, file, ensure_ascii=False, indent=4)
+        print("Data from API successfully written to publication.json")
+    else:
+        print(f"Failed to retrieve data from API. Status code: {response.status_code}")
+else:
+    print("Failed to extract pub_id from the URL.")
+    
 # Dashboard Main Panel
 col = st.columns((4.5, 1), gap='medium')
 
 with col[0]:
+    st.write('#' + url.split('#')[1])
     st.markdown('#### Title')
     st.write(publication_data['title'])
     
@@ -139,7 +157,7 @@ with col[0]:
     for rec_pub in publication_data['pub_rec']:
         publication_id = rec_pub['id']
         publication_title = rec_pub['title']
-        st.markdown(f"{publication_id} : <a href='#{publication_id}'>{publication_title}</a>", unsafe_allow_html=True)
+        st.markdown(f"{publication_id} : <a href='#{publication_id}' target='_blank' style='{link_style}'>{publication_title}</a>", unsafe_allow_html=True)
 
     # Plot network graph using NetworkX
     node_graph = publication_data['node_graph']
@@ -212,13 +230,11 @@ with col[0]:
 
     st.plotly_chart(fig, use_container_width=True)  # Show the graph in streamlit
 
-    #GREAT_CIRCLE_LAYER_DATA = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/flights.json"  # noqa
-    
-    df = transform_data(publication_data)
-    
+    odf = transform_data(publication_data)
+    df = pd.DataFrame(odf)
     # Use pandas to prepare data for tooltip
-    #df["from_name"] = df["from"].apply(lambda f: f["name"])
-    #df["to_name"] = df["to"].apply(lambda t: t["name"])
+    df["from_name"] = df["from"].apply(lambda f: f["name"])
+    df["to_name"] = df["to"].apply(lambda t: t["name"])
 
     # Define a layer to display on a map
     layer = pdk.Layer(
@@ -240,7 +256,7 @@ with col[0]:
     r = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
-        #tooltip={"text": "{from_name} to {to_name}"},
+        tooltip={"text": "{from_name} to {to_name}"},
     )
     r.picking_radius = 10
 
