@@ -1,4 +1,5 @@
 # implements the dalaloader with lock and cache
+import ast
 import json
 from abc import ABC, abstractmethod
 
@@ -39,7 +40,9 @@ class DataLoader(ABC):
 
 class PubDataLoader(DataLoader):
     def __init__(self, path: str):
-        super().__init__(path, ["id", "title", "abstracts", "affiliation_id", "link"])
+        super().__init__(
+            path, ["id", "title", "abstracts", "affiliation_id", "link", "rec"]
+        )
 
     def preprocess_df(self, df: pd.DataFrame) -> pd.DataFrame:
         def jsonify(x):
@@ -49,6 +52,7 @@ class PubDataLoader(DataLoader):
         # df = df[~df["title"].isna()]
         df["len"] = df["title"].str.len()
         df["affiliation_id"] = df["affiliation_id"].apply(jsonify)
+        df["rec"] = df["rec"].apply(ast.literal_eval)
         return df
 
 
@@ -59,6 +63,7 @@ class AffilDataLoader(DataLoader):
         )
 
     def preprocess_df(self, df: pd.DataFrame) -> pd.DataFrame:
+        df = df[(df["lat"].notna()) & (df["lon"].notna())]
         return df
 
 

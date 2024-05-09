@@ -1,5 +1,4 @@
 import math
-from functools import lru_cache
 
 import pandas as pd
 
@@ -13,7 +12,7 @@ from ..schemas import (
     PubResp,
     affilResp,
 )
-from ..services import aff_dataloader, pub_dataloader, ref_dataloader, sim_dataloader
+from ..services import aff_dataloader, pub_dataloader, ref_dataloader
 
 ################ BASIC FUNC ################
 
@@ -30,11 +29,7 @@ def get_affil_by_id(list_affi_id: list[int]) -> list[affilResp]:
     df_current_affi = df_current_affi.merge(aff_df, on="id", how="left")
     dict_ = df_current_affi.to_dict(orient="records")
     result = [
-        (
-            affilResp(affiliation=aff["affilname"], lat=aff["lat"], lng=aff["lon"])
-            if not pd.isna(aff["lat"]) and not pd.isna(aff["lon"])
-            else affilResp(affiliation=aff["affilname"], lat=None, lng=None)
-        )
+        affilResp(affiliation=aff["affilname"], lat=aff["lat"], lng=aff["lon"])
         for aff in dict_
     ]
     return result
@@ -125,16 +120,11 @@ def get_pub_rec(pub_id: int, page_size: int = 10, page: int = 1) -> list[PubResp
     """
     Get publication recommendation
     """
-    similarity_matrix = sim_dataloader.get_data()
-    if similarity_matrix is None:
-        raise HTTPException(status_code=503, detail="Data Similiarity not available")
+    df_pub = pub_dataloader.get_data()
+    if df_pub is None:
+        raise HTTPException(status_code=503, detail="Pub Data not available")
     # Get similarity scores
-    similarity_scores = similarity_matrix[pub_id]
-
-    # Get indices of publications similar to the target publication
-    similar_pub_indices = similarity_scores.argsort()[::-1]
-    similar_pub_indices = similar_pub_indices[similar_pub_indices != pub_id]
-    similar_pub_indices = similar_pub_indices[(page - 1) * page_size : page * page_size]
+    similar_pub_indices = df_pub[df_pub["id"] == pub_id].iloc[0]["rec"]
     return get_pub_resp_by_list_id(similar_pub_indices, need_affil=False)
 
 
@@ -173,5 +163,4 @@ def get_pub_details(pub_id: int, lower_bound: int) -> PubDetailResp:
         pub_rec=pub_rec,
         node_graph=node_graph,
     )
-    print(pub_detail)
     return pub_detail
