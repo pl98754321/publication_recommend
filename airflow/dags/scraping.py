@@ -6,6 +6,7 @@ import time
 import os
 import datetime
 from dotenv import load_dotenv
+import sys
 
 def get_time():
     today = datetime.datetime.now()
@@ -87,8 +88,8 @@ def get_scraping():
     time_string, ytime_string = get_time()
 
     #create folder a day
-    day_folder = my_path+'\\research_csv\\'+time_string
-    yesterday_folder = my_path+'\\research_csv\\'+ytime_string
+    day_folder = my_path+'/research_csv/'+time_string
+    yesterday_folder = my_path+'/research_csv/'+ytime_string
 
     if not os.path.exists(day_folder):
         os.mkdir(day_folder)    
@@ -98,10 +99,10 @@ def get_scraping():
     yref_info = pd.DataFrame()
 
     if os.path.exists(yesterday_folder):
-        if os.path.exists(yesterday_folder+'\\paper_info.csv'):
-            ypaper_info = pd.read_csv(yesterday_folder+'\\paper_info.csv',index_col=0)
-        if os.path.exists(yesterday_folder+'\\ref_info.csv'):
-            yref_info = pd.read_csv(yesterday_folder+'\\ref_info.csv',index_col=0)
+        if os.path.exists(yesterday_folder+'/paper_info.csv'):
+            ypaper_info = pd.read_csv(yesterday_folder+'/paper_info.csv',index_col=0)
+        if os.path.exists(yesterday_folder+'/ref_info.csv'):
+            yref_info = pd.read_csv(yesterday_folder+'/ref_info.csv',index_col=0)
 
     #paper next id and ref next id
     paperNid = len(ypaper_info.index)
@@ -127,7 +128,7 @@ def get_scraping():
 
 
     #publicatino year 2018 and doctype article
-    days_fetch = len(os.listdir('.\\research_csv'))-1
+    days_fetch = len(os.listdir('./research_csv'))-1
     for i in range(len(pubyear)):
         search_query = '%28PUBYEAR%20%3D%20'+pubyear[i]+'%29%20AND%20%28DOCTYPE%28ar%29%29'
         itemperpage = '20'
@@ -142,7 +143,7 @@ def get_scraping():
     paper_info = df
     paper_info['affil_coor'] = paper_info.apply(lambda x : [] , axis=1)
     coor = dict()
-    if os.path.exists(my_path+'\\coor.json'):
+    if os.path.exists(my_path+'/coor.json'):
         f = open('coor.json')
         coor = json.load(f)
         f.close()
@@ -183,10 +184,11 @@ def get_scraping():
     df = pd.concat([ypaper_info , paper_info] , join='inner' ,ignore_index=True)
     ref_df = pd.concat([yref_info , ref_df] , join='inner' , ignore_index=True)
 
-    df.to_csv(day_folder+'\\paper_info.csv')
-    ref_df.to_csv(day_folder+'\\ref_info.csv')
+    df.to_csv(day_folder+'/paper_info.csv')
+    ref_df.to_csv(day_folder+'/ref_info.csv')
 
-    paper_info_file = day_folder+'\\paper_info.csv'
-    ref_info_file = day_folder+'\\ref_info.csv'
+    paper_info_file = day_folder+'/paper_info.csv'
+    ref_info_file = day_folder+'/ref_info.csv'
 
     return paper_info_file , ref_info_file
+

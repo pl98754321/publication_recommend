@@ -5,7 +5,7 @@ from airflow.utils.dates import days_ago
 from datetime import datetime
 import requests
 import json
-from scraping import get_scraping
+from scraping import *
 
 def create_file(ti):
 
@@ -37,43 +37,42 @@ def scraping(ti):
     
 
 
-def print_welcome():
-    print('Welcome to Airflow!')
+def print_complete():
+    print('Complete scraping!!')
 
-
-
-def print_date():
-    print('Today is {}'.format(datetime.today().date()))
-
-
-
-def print_random_quote():
-    response = requests.get('https://api.quotable.io/random')
-    quote = response.json()['content']
-    print('Quote of the day: "{}"'.format(quote))
 
 
 
 dag = DAG(
-    'welcome_dag4',
+    'project',
     default_args={'start_date': days_ago(1)},
     schedule_interval='0 23 * * *',
     catchup=False
 )
 
 
-create_file_task = PythonOperator(
-    task_id = 'craete_file',
-    python_callable = create_file,
-    dag=dag
-)
+# create_file_task = PythonOperator(
+#     task_id = 'craete_file',
+#     python_callable = create_file,
+#     dag=dag
+# )
 
-read_file_task = PythonOperator(
-    task_id = 'read_file',
-    python_callable = read_file,
+# read_file_task = PythonOperator(
+#     task_id = 'read_file',
+#     python_callable = read_file,
+#     dag = dag
+# )
+
+scraping_task = PythonOperator(
+    task_id = 'scraping_data',
+    python_callable = scraping,
     dag = dag
 )
 
+print_complete_task = PythonOperator(
+    task_id = 'print_complete',
+    python_callable = print_complete,
+    dag = dag
+)
 
-
-create_file_task >> read_file_task 
+scraping_task >> print_complete_task 
