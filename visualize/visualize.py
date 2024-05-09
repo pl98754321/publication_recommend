@@ -1,5 +1,6 @@
 #######################
 # Import libraries
+import requests
 import streamlit as st
 import pandas as pd
 import altair as alt
@@ -25,32 +26,33 @@ alt.themes.enable("dark")
 
 #######################
 # Sidebar
+import streamlit as st
+import requests
+
+link_style = "text-decoration: none; color: #1E88E5; font-weight: bold; font-size: 16px; margin-bottom: 10px;"
+
 with st.sidebar:
     st.title('📚 Publication Recommendation')
-
-    color_theme_list = ['blues', 'cividis', 'greens', 'inferno', 'magma', 'plasma', 'reds', 'rainbow', 'turbo', 'viridis']
-    selected_color_theme = st.selectbox('Select a color theme', color_theme_list)
 
     # Text input for searching
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
     my_input = st.text_input("Input a text here", st.session_state["my_input"])
-    
+
     submit = st.button("Search")
 
-    with open('auto_complete.json', 'r') as file:
-        autocomplete_data = json.load(file)
-        titles = [pub['title'] for pub in autocomplete_data['pubs']]
-        ids = [pub['id'] for pub in autocomplete_data['pubs']]
-
-        # Dropdown menu for displaying publication titles
-        selected_title = st.selectbox("auto complete", titles)
-
-        # Create links that redirect to the corresponding IDs
-        for title, id in zip(titles, ids):
-            if title == selected_title:
-                st.markdown(f'<a href="#{id}">Go</a>', unsafe_allow_html=True)
-
+    # Make request to the auto_complete endpoint only when submit button is clicked
+    if submit:
+        response = requests.get('http://localhost:8081/auto_complete', params={'query': my_input})
+        if response.status_code == 200:
+            autocomplete_data = response.json()
+            pubs = autocomplete_data['pubs']
+            st.markdown("Top results")
+            # Display publication titles as clickable links with styling
+            i = 1
+            for pub in pubs:
+                st.markdown(f'{i}. <a href="#{pub["id"]}" style="{link_style}">{pub["title"]}</a>', unsafe_allow_html=True)
+                i += 1
 
 #######################
 # Plots
@@ -212,8 +214,6 @@ with col[0]:
 
     st.plotly_chart(fig, use_container_width=True)  # Show the graph in streamlit
 
-    #GREAT_CIRCLE_LAYER_DATA = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/flights.json"  # noqa
-    
     df = transform_data(publication_data)
     
     # Use pandas to prepare data for tooltip
