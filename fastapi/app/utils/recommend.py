@@ -24,12 +24,12 @@ def get_affil_by_id(list_affi_id: list[int]) -> list[affilResp]:
     aff_df = aff_dataloader.get_data()
     if aff_df is None:
         raise HTTPException(status_code=503, detail="Data not available")
-    aff_df = aff_df[["id", "affilname", "lat", "lon"]]
+    aff_df = aff_df[["id", "affilcity", "lat", "lon"]]
     df_current_affi = pd.DataFrame({"id": list_affi_id})
     df_current_affi = df_current_affi.merge(aff_df, on="id", how="left")
     dict_ = df_current_affi.to_dict(orient="records")
     result = [
-        affilResp(affiliation=aff["affilname"], lat=aff["lat"], lng=aff["lon"])
+        affilResp(affiliation=aff["affilcity"], lat=aff["lat"], lng=aff["lon"])
         for aff in dict_
     ]
     return result

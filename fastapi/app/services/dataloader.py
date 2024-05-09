@@ -63,7 +63,7 @@ class AffilDataLoader(DataLoader):
         )
 
     def preprocess_df(self, df: pd.DataFrame) -> pd.DataFrame:
-        df = df[(df["lat"].notna()) & (df["lon"].notna())]
+        df = df[(df["lat"].notna()) & (df["lon"].notna()) & (df["affilcity"].notna())]
         return df
 
 
