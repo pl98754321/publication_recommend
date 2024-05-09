@@ -1880,3 +1880,17 @@ ImportError: cannot import name 'get_scraping' from 'get_scraping' (unknown loca
 [2024-05-09T08:56:56.061+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:56:56.061+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-05-09T08:56:56.075+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:56:56.075+0000] {dag.py:3954} INFO - Setting next_dagrun for project to 2024-05-08 23:00:00+00:00, run_after=2024-05-09 23:00:00+00:00
 [2024-05-09T08:56:56.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag.py took 0.502 seconds
+[2024-05-09T08:57:27.189+0000] {processor.py:161} INFO - Started process (PID=351) to work on /opt/airflow/dags/test_dag.py
+[2024-05-09T08:57:27.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-05-09T08:57:27.190+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:57:27.190+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-05-09T08:57:27.622+0000] {processor.py:840} INFO - DAG(s) 'project' retrieved from /opt/airflow/dags/test_dag.py
+[2024-05-09T08:57:27.640+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:57:27.640+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-09T08:57:27.656+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:57:27.655+0000] {dag.py:3954} INFO - Setting next_dagrun for project to 2024-05-08 23:00:00+00:00, run_after=2024-05-09 23:00:00+00:00
+[2024-05-09T08:57:27.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag.py took 0.507 seconds
+[2024-05-09T08:57:58.695+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/test_dag.py
+[2024-05-09T08:57:58.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_dag.py for tasks to queue
+[2024-05-09T08:57:58.696+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:57:58.696+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/test_dag.py
+[2024-05-09T08:57:59.182+0000] {processor.py:840} INFO - DAG(s) 'project' retrieved from /opt/airflow/dags/test_dag.py
+[2024-05-09T08:57:59.201+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:57:59.201+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-09T08:57:59.217+0000] {logging_mixin.py:188} INFO - [2024-05-09T08:57:59.217+0000] {dag.py:3954} INFO - Setting next_dagrun for project to 2024-05-08 23:00:00+00:00, run_after=2024-05-09 23:00:00+00:00
+[2024-05-09T08:57:59.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_dag.py took 0.569 seconds
