@@ -230,11 +230,11 @@ with col[0]:
 
     st.plotly_chart(fig, use_container_width=True)  # Show the graph in streamlit
 
-    df = transform_data(publication_data)
-    
+    odf = transform_data(publication_data)
+    df = pd.DataFrame(odf)
     # Use pandas to prepare data for tooltip
-    #df["from_name"] = df["from"].apply(lambda f: f["name"])
-    #df["to_name"] = df["to"].apply(lambda t: t["name"])
+    df["from_name"] = df["from"].apply(lambda f: f["name"])
+    df["to_name"] = df["to"].apply(lambda t: t["name"])
 
     # Define a layer to display on a map
     layer = pdk.Layer(
@@ -256,7 +256,7 @@ with col[0]:
     r = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
-        #tooltip={"text": "{from_name} to {to_name}"},
+        tooltip={"text": "{from_name} to {to_name}"},
     )
     r.picking_radius = 10
 
