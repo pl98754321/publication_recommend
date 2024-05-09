@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  fastapi-ds:
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile
+    container_name: fastapi-ds
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
