@@ -1,0 +1,18 @@
+[2024-05-10T06:46:29.166+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T06:46:30.224+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_project.craete_file manual__2024-05-10T06:46:27.472889+00:00 [queued]>
+[2024-05-10T06:46:30.262+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_project.craete_file manual__2024-05-10T06:46:27.472889+00:00 [queued]>
+[2024-05-10T06:46:30.262+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-10T06:46:30.318+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): craete_file> on 2024-05-10 06:46:27.472889+00:00
+[2024-05-10T06:46:30.644+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_project', 'craete_file', 'manual__2024-05-10T06:46:27.472889+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/test_dags.py', '--cfg-path', '/tmp/tmpw3ryqkde']
+[2024-05-10T06:46:30.754+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=390) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-10T06:46:30.779+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask craete_file
+[2024-05-10T06:46:30.781+0000] {standard_task_runner.py:63} INFO - Started process 398 to run task
+[2024-05-10T06:46:31.422+0000] {task_command.py:426} INFO - Running <TaskInstance: test_project.craete_file manual__2024-05-10T06:46:27.472889+00:00 [running]> on host 3857dc9e6f2e
+[2024-05-10T06:46:31.909+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_project' AIRFLOW_CTX_TASK_ID='craete_file' AIRFLOW_CTX_EXECUTION_DATE='2024-05-10T06:46:27.472889+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-10T06:46:27.472889+00:00'
+[2024-05-10T06:46:31.911+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T06:46:32.144+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-10T06:46:32.147+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T06:46:32.239+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=test_project, task_id=craete_file, run_id=manual__2024-05-10T06:46:27.472889+00:00, execution_date=20240510T064627, start_date=20240510T064630, end_date=20240510T064632
+[2024-05-10T06:46:32.321+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T06:46:32.339+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T06:46:32.340+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
