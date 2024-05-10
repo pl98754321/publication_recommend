@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends
 
 from ..config import VERSION
 from ..schemas import AutocompleteResp, HelloResp, PubDetailResp
+from ..services import aff_dataloader, pub_dataloader, ref_dataloader
 from ..utils import auto_complete_from_query, get_pub_details
 
 router = APIRouter(prefix="", tags=["course"])
@@ -22,3 +23,10 @@ def get_auto_complete(query: str, page: int = 1, page_size: int = 20):
 @router.get("/publication/{pub_id}", response_model=PubDetailResp)
 def api_get_pub_details(pub_id: int, lower_bound: int = 0):
     return get_pub_details(pub_id, lower_bound)
+
+
+@router.get("/update_data")
+def update_data():
+    for dataloader in [pub_dataloader, ref_dataloader, aff_dataloader]:
+        dataloader.update_new()
+    return {"message": "Data updated"}
