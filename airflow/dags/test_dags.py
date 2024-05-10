@@ -40,8 +40,8 @@ def read_file(ti):
 
 
 def ds_run_script(ti):
-    paper_info_path = ti.xcom_pull(task_ids="scraping_data", key="folder")
-    ref_info_path = ti.xcom_pull(task_ids="scraping_data", key="folder")
+    paper_info_path = ti.xcom_pull(task_ids="scraping_data", key="paper_info_path")
+    ref_info_path = ti.xcom_pull(task_ids="scraping_data", key="ref_info_path")
     main(paper_info_path, ref_info_path)
 
 
@@ -62,19 +62,12 @@ def scraping(ti):
     ti.xcom_push(key="ref_info_path", value=ref_info_path)
 
 
-def get_current_directory():
-    print(os.getcwd())
-
-
-def print_complete():
-    print("Complete scraping!!")
-
-
 dag = DAG(
-    "nearly_project",
+    "ds_project",
     default_args={"start_date": days_ago(1)},
     schedule_interval="0 12 * * *",
     catchup=False,
+    
 )
 
 
@@ -100,15 +93,6 @@ fastapi_task = PythonOperator(
     task_id="fastapi_task", python_callable=fastapi_run_update, dag=dag
 )
 
-print_complete_task = PythonOperator(
-    task_id="print_complete", python_callable=print_complete, dag=dag
-)
-
-print_current_directory = PythonOperator(
-    task_id="print_current_directory",
-    python_callable=get_current_directory,
-    dag=dag,
-)
 
 # create_file_task >> read_file_task
-scraping_task >> print_current_directory
+scraping_task >> ds_task >> fastapi_task

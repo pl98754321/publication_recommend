@@ -131,7 +131,7 @@ def get_scraping():
     days_fetch = len(os.listdir(my_path+'/research_csv'))-1
     for i in range(len(pubyear)):
         search_query = '%28PUBYEAR%20%3D%20'+pubyear[i]+'%29%20AND%20%28DOCTYPE%28ar%29%29'
-        itemperpage = '200'
+        itemperpage = '1'
         response = rq.get(api_url + search_query +"&count="+itemperpage  + "&start=" +str(int(itemperpage) *days_fetch) , headers = header)
         result = (response.json())
         print(result)

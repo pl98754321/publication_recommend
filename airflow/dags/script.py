@@ -3,16 +3,17 @@ import re
 from pathlib import Path
 
 import pandas as pd
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
+# from nltk.corpus import stopwords
+# from nltk.stem import WordNetLemmatizer
+# from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
 def get_path(folder_name: str):
     current_path = Path(__file__).parent.parent / folder_name
-    return current_path.__str__()
+    # return current_path.__str__()
+    return '/opt/airflow' + folder_name
 
 
 def clean_text(text):
@@ -30,20 +31,21 @@ def clean_text(text):
     text = text.lower()
 
     # Tokenize text
-    tokens = word_tokenize(text)
+    # tokens = word_tokenize(text)
 
-    # Remove stopwords
-    stop_words = set(stopwords.words("english"))
-    tokens = [word for word in tokens if word not in stop_words]
+    # # Remove stopwords
+    # stop_words = set(stopwords.words("english"))
+    # tokens = [word for word in tokens if word not in stop_words]
 
-    # Lemmatization
-    lemmatizer = WordNetLemmatizer()
-    tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    # # Lemmatization
+    # lemmatizer = WordNetLemmatizer()
+    # tokens = [lemmatizer.lemmatize(word) for word in tokens]
 
-    # Join tokens back into a single string
-    cleaned_text = " ".join(tokens)
+    # # Join tokens back into a single string
+    # cleaned_text = " ".join(tokens)
 
-    return cleaned_text
+    # return cleaned_text
+    return text
 
 
 def proprocess_pub_raw(df_pub_raw: pd.DataFrame):
@@ -111,8 +113,11 @@ def preprocess_df_ref(df_ref: pd.DataFrame, df_pub: pd.DataFrame):
 def create_similarity_matrix(list_abstracts: list[str]):
     # Create TF-IDF representation
     tfidf_vectorizer = TfidfVectorizer()
+    print(7)
     tfidf_matrix = tfidf_vectorizer.fit_transform(list_abstracts)
+    print(8)
     similarity_matrix = cosine_similarity(tfidf_matrix, tfidf_matrix)
+    print(9)
     return similarity_matrix
 
 
@@ -140,23 +145,32 @@ def recommend_publications(
 
 
 def add_rec_to_pub(df_pub: pd.DataFrame):
+    print(1)
     df_pub["abstracts_preprocess"] = df_pub["abstracts"].apply(clean_text)
-    similiar_matrix = create_similarity_matrix(df_pub["abstracts_preprocess"].to_list())
+    print(2)
+    try:
+        similiar_matrix = create_similarity_matrix(df_pub["abstracts_preprocess"].to_list())
+    except Exception as e:
+        print(e)
+        raise ValueError(f"{e}")
+    print(3)
     df_pub = df_pub.drop(columns="id").reset_index(drop=True).reset_index(names="id")
+    print(4)
     df_pub["rec"] = df_pub["id"].apply(
         lambda x: recommend_publications(x, similiar_matrix)
     )
+    print(5)
     df_pub = df_pub.drop(columns="abstracts_preprocess")
     return df_pub
 
 
 def load_data():
     import pandas as pd
-
+    
     # lat_lon_ciry = pd.DataFrame(columns=["affilcity","lat","lon"])
-    lat_lon_ciry = pd.read_csv(get_path("/data_raw/worldcities.csv"))
-    df_ref = pd.read_csv(get_path("data_raw/ref_raw.csv"))
-    df_pub = pd.read_csv(get_path("data_raw/pub_raw.csv"))
+    lat_lon_ciry = pd.read_csv(get_path("/plugins/data_raw/worldcities.csv"))
+    df_ref = pd.read_csv(get_path("/plugins/data_raw/ref_raw.csv"))
+    df_pub = pd.read_csv(get_path("/plugins/data_raw/pub_raw.csv"))
 
     lat_lon_ciry = lat_lon_ciry[["city_ascii", "lat", "lng"]].rename(
         columns={"city_ascii": "affilcity", "lat": "lat", "lng": "lon"}
@@ -216,8 +230,8 @@ def merge_save_new_pub(
     df_ref = df_ref.drop_duplicates(subset=["title", "title_ref"])
 
     df_pub = df_pub[df_pub["title"].notna() & df_pub["abstracts"].notna()]
-    df_pub.to_csv(get_path("data_raw/pub_raw.csv"), index=False)
-    df_ref.to_csv(get_path("data_raw/ref_raw.csv"), index=False)
+    df_pub.to_csv(get_path("/plugins/data_raw/pub_raw.csv"), index=False)
+    df_ref.to_csv(get_path("/plugins/data_raw/ref_raw.csv"), index=False)
     return df_pub, df_ref
 
 
@@ -234,6 +248,6 @@ def main(paper_info_path: str, ref_info_path: str):
     print("Recommendation added")
     df_ref_merge_id = preprocess_df_ref(df_ref, df_pub)
     print("Save data")
-    affiliate_df.to_csv(get_path("data_process/affiliation.csv"), index=False)
-    df_pub_preprocess.to_csv(get_path("data_process/pub_preprocessed.csv"), index=False)
-    df_ref_merge_id.to_csv(get_path("data_process/ref_preprocessed.csv"), index=False)
+    affiliate_df.to_csv(get_path("/plugins/data_process/affiliation.csv"), index=False)
+    df_pub_preprocess.to_csv(get_path("/plugins/data_process/pub_preprocessed.csv"), index=False)
+    df_ref_merge_id.to_csv(get_path("/plugins/data_process/ref_preprocessed.csv"), index=False)
