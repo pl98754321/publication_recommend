@@ -26,21 +26,21 @@ def clean_text(text):
     # Convert text to lowercase
     text = text.lower()
 
-    # Tokenize text
-    tokens = word_tokenize(text)
+    # # Tokenize text
+    # tokens = word_tokenize(text)
 
-    # Remove stopwords
-    stop_words = set(stopwords.words("english"))
-    tokens = [word for word in tokens if word not in stop_words]
+    # # Remove stopwords
+    # stop_words = set(stopwords.words("english"))
+    # tokens = [word for word in tokens if word not in stop_words]
 
-    # Lemmatization
-    lemmatizer = WordNetLemmatizer()
-    tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    # # Lemmatization
+    # lemmatizer = WordNetLemmatizer()
+    # tokens = [lemmatizer.lemmatize(word) for word in tokens]
 
-    # Join tokens back into a single string
-    cleaned_text = " ".join(tokens)
+    # # Join tokens back into a single string
+    # cleaned_text = " ".join(tokens)
 
-    return cleaned_text
+    return text
 
 
 def proprocess_pub_raw(df_pub_raw: pd.DataFrame):
