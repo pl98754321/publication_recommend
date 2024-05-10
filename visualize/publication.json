@@ -1,3174 +1,411 @@
 {
-  "title": "Machine Learning Based Design of Railway Prestressed Concrete Sleepers",
-  "id": 13960,
-  "affilations": [
-    {
-      "lat": 13.7389,
-      "lng": 100.5284,
-      "affiliation": "Chulalongkorn University"
-    },
-    {
-      "lat": null,
-      "lng": null,
-      "affiliation": "University of Birmingham"
-    },
-    {
-      "lat": null,
-      "lng": null,
-      "affiliation": "University of Wollongong"
-    }
-  ],
-  "abstract": "© 2022 by the authors.The state-of-the-art design methods for railway prestressed concrete sleepers are currently based on the quasi-static stresses resulting from a simplification of dynamic wheel loads, and subsequently the quasi-static responses of concrete sleepers. This method has been widely used in practices to overcome the complexity of dynamic analysis and testing. A single load factor (or called dynamic impact factor) for a partial safety-factored design (or k factors for the test criteria) is commonly used to crudely account for dynamic train–track interactions over different levels of track irregularities. The dynamic impact factors for either design or testing are usually obtained from either (i) railway infrastructure managers (i.e., in EN 13230), or (ii) prescribed standardised factors (i.e., AS 1085.14, AREMA Chapter 30, JSA—JIS E 1201). The existing design concepts for prestressed concrete sleepers using either (i) an allowable stress design or (ii) the limit state design method require many iterations for calculations and optimisations. The design process to achieve optimal products suitable for track, operational, and environmental parameters is, thus, very time-consuming. On this ground, this study investigates the potential capability of machine learning (ML) to learn from large amounts of design data sets and then to facilitate the design and capacity prediction of railway prestressed concrete sleepers. Three ML algorithms are developed, namely deep learning, Bayesian Neural Network, and random forest. Through a combination of hand-calculated design data, industry design data, and experimental investigations in compliance with EN 13230, over 3000 sets of design data have been collected. These data sets are used to assimilate a comprehensive database for machine learning. Four indicators, namely mean squared error (MSE), root-mean-square error (RMSE), mean absolute error (MAE), and R2 are used to benchmark the accuracy and precision of machine learning models. Our results reveal that the random forest algorithm offers the best performance. The values of MSE, RMSE, MAE, and R2 are 0.54, 0.74, 0.25, and 0.99, respectively. Note that the Bayesian neural network also performs very well. In contrast, the deep learning algorithm performs worse than the others. The insight demonstrates machine learning’s capability to aid in the design of railway prestressed concrete sleepers, to satisfy both serviceability and ultimate limit states",
-  "link": "",
-  "pub_rec": [
-    {
-      "title": "Peritoneal dialysis care during the COVID-19 pandemic, ThailandInterventions de dialyse péritonéale en période de pandémie de COVID-19, ThaïlandeCuidados de diálisis peritoneal durante la pandemia de la COVID-19 en Tailandia",
-      "id": 16023,
-      "affilations": []
-    },
-    {
-      "title": "Is combining therapy with indomethacin and epinephrine useful for preventing post-ERCP pancreatitis? The answer from a meta-analysis",
-      "id": 8075,
-      "affilations": []
-    },
-    {
-      "title": "Determination of stimulating factors of wild Asian elephant (Elephas maximus) dispersal from the kaeng krachan national park to surrounding land use in Thailand",
-      "id": 8989,
-      "affilations": []
-    },
-    {
-      "title": "Immediate and long-term effects of a very-low-calorie diet on diabetes remission and glycemic control in obese Thai patients with type 2 diabetes mellitus",
-      "id": 4666,
-      "affilations": []
-    },
-    {
-      "title": "Pathological femoral fracture in a doe secondary to osteomalacia: A veterinary clinical case report",
-      "id": 5635,
-      "affilations": []
-    },
-    {
-      "title": "Computational design of SARS-CoV-2 peptide binders with better predicted binding affinities than human ACE2 receptor",
-      "id": 9598,
-      "affilations": []
-    },
-    {
-      "title": "Capability of single and double elements doped perovskite oxide catalysts in 5-hydroxymethyl furfural oxidation",
-      "id": 16371,
-      "affilations": []
-    },
-    {
-      "title": "Development of a Data-Driven Soft Sensor for Multivariate Chemical Processes Using Concordance Correlation Coefficient Subsets Integrated with Parallel Inverse-Free Extreme Learning Machine",
-      "id": 18110,
-      "affilations": []
-    },
-    {
-      "title": "The prevalence of normoalbuminuria and renal impairment in type 2 diabetes mellitus",
-      "id": 5469,
-      "affilations": []
-    },
-    {
-      "title": "Low-cost videolaryngoscope in response to COVID-19 pandemic",
-      "id": 8758,
-      "affilations": []
-    }
-  ],
-  "node_graph": {
-    "edge": [
-      {
-        "source": 13960,
-        "target": 12299,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 14112,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 9310,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 51,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 2211,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 2331,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 2439,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 2656,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 3360,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 4086,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 4191,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 4193,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 5556,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 5766,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 5944,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 7317,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 7721,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 7822,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 8015,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 8882,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 9016,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 9141,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 10494,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 10621,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 10788,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 11527,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 11737,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 12250,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 12273,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 14695,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 14788,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 15691,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 16325,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 16608,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 16685,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 16890,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 17994,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 18830,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19034,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19614,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19641,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19667,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19692,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 8909,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 16018,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 3428,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 18983,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 20039,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 1323,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 8549,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 12556,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 13338,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 13502,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 13774,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 13894,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 16016,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 17917,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 18093,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19130,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19187,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19270,
-        "weight": 2
-      },
-      {
-        "source": 13960,
-        "target": 19879,
-        "weight": 1
-      },
-      {
-        "source": 13960,
-        "target": 19462,
-        "weight": 1
-      }
+    "title": "AdS5 vacua and holographic RG flows from 5D N= 4 gauged supergravity",
+    "id": 18369,
+    "affilations": [
+        {
+            "lat": 13.7525,
+            "lng": 100.4942,
+            "affiliation": "Bangkok"
+        }
     ],
-    "node": [
-      {
-        "title": "The Impact of Data-Complexity and Team Characteristics on Performance in the Classification Model: Findings From a Collaborative Platform",
-        "id": 12299,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chulalongkorn Business School"
-          }
+    "abstract": "© 2023, The Author(s).We study five-dimensional N= 4 gauged supergravity coupled to five vector multiplets with SO(2) D× SO(3) × SO(3) gauge group. There are four supersymmetric AdS5 vacua in the truncation to SO(2) diag invariant scalars. Two of these vacua preserve the full N= 4 supersymmetry with SO(2) D× SO(3) × SO(3) and SO(2) D× SO(3) diag symmetries. These have an analogue in N= 4 gauged supergravity with SO(2) × SO(3) × SO(3) gauge group. The other two AdS5 vacua preserve only N= 2 supersymmetry with SO(2) diag× SO(3) and SO(2) diag symmetry. The former has an analogue in the previous study of SO(2) D× SO(3) gauge group while the latter is a genuinely new N= 2 AdS5 vacuum. These vacua should be dual to N= 2 and N= 1 superconformal field theories (SCFTs) in four dimensions with different flavour symmetries. We give the full scalar mass spectra at all of the AdS5 critical points which provide information on conformal dimensions of the dual operators. Finally, we study holographic RG flows interpolating between these AdS5 vacua and find a new class of solutions. In addition to the RG flows from the trivial SO(2) D× SO(3) × SO(3) N= 4 critical point, at the origin of the scalar manifold, to all the other critical points, there is a family of RG flows from the trivial N= 4 critical point to the new SO(2) diagN= 2 critical point that pass arbitrarily close to the SO(2) D× SO(3) diagN= 4 critical point.",
+    "link": "",
+    "pub_rec": [
+        {
+            "title": "Holographic RG flows in N= 4 SCFTs from half-maximal gauged supergravity",
+            "id": 849,
+            "affilations": []
+        },
+        {
+            "title": "Supersymmetric AdS4 black holes from matter-coupled N= 3 , 4 gauged supergravities",
+            "id": 9536,
+            "affilations": []
+        },
+        {
+            "title": "Holographic RG flows and symplectic deformations of N=4 gauged supergravity",
+            "id": 14882,
+            "affilations": []
+        },
+        {
+            "title": "Holographic RG flows and AdS 5 black strings from 5D half-maximal gauged supergravity",
+            "id": 4630,
+            "affilations": []
+        },
+        {
+            "title": "New supersymmetric Janus solutions from N=4 gauged supergravity",
+            "id": 14650,
+            "affilations": []
+        },
+        {
+            "title": "New supersymmetric AdS5 black strings from 5D N= 4 gauged supergravity",
+            "id": 17799,
+            "affilations": []
+        },
+        {
+            "title": "Holographic RG flows and Janus solutions from matter-coupled N= 4 gauged supergravity",
+            "id": 10697,
+            "affilations": []
+        },
+        {
+            "title": "Supersymmetric solutions of matter-coupled 7D N=2 gauged supergravity",
+            "id": 420,
+            "affilations": []
+        },
+        {
+            "title": "Two-dimensional SCFTs from matter-coupled 7DN=2 gauged supergravity",
+            "id": 3632,
+            "affilations": []
+        },
+        {
+            "title": "Supersymmetric solutions from N=6 gauged supergravity",
+            "id": 11263,
+            "affilations": []
+        }
+    ],
+    "node_graph": {
+        "edge": [
+            {
+                "source": 18369,
+                "target": 849,
+                "weight": 15.0
+            },
+            {
+                "source": 18369,
+                "target": 1018,
+                "weight": 1.0
+            },
+            {
+                "source": 18369,
+                "target": 1385,
+                "weight": 1.0
+            },
+            {
+                "source": 18369,
+                "target": 3433,
+                "weight": 3.0
+            },
+            {
+                "source": 18369,
+                "target": 3631,
+                "weight": 1.0
+            },
+            {
+                "source": 18369,
+                "target": 3632,
+                "weight": 1.0
+            },
+            {
+                "source": 18369,
+                "target": 4484,
+                "weight": 3.0
+            },
+            {
+                "source": 18369,
+                "target": 4630,
+                "weight": 18.0
+            },
+            {
+                "source": 18369,
+                "target": 7776,
+                "weight": 1.0
+            },
+            {
+                "source": 18369,
+                "target": 9536,
+                "weight": 4.0
+            },
+            {
+                "source": 18369,
+                "target": 9771,
+                "weight": 2.0
+            },
+            {
+                "source": 18369,
+                "target": 10030,
+                "weight": 6.0
+            },
+            {
+                "source": 18369,
+                "target": 10244,
+                "weight": 2.0
+            },
+            {
+                "source": 18369,
+                "target": 10697,
+                "weight": 15.0
+            },
+            {
+                "source": 18369,
+                "target": 9457,
+                "weight": 2.0
+            },
+            {
+                "source": 18369,
+                "target": 17799,
+                "weight": 3.0
+            },
+            {
+                "source": 18369,
+                "target": 11263,
+                "weight": 3.0
+            },
+            {
+                "source": 18369,
+                "target": 14650,
+                "weight": 2.0
+            },
+            {
+                "source": 18369,
+                "target": 14882,
+                "weight": 3.0
+            },
+            {
+                "source": 18369,
+                "target": 3436,
+                "weight": 3.0
+            }
+        ],
+        "node": [
+            {
+                "title": "Holographic RG flows in N= 4 SCFTs from half-maximal gauged supergravity",
+                "id": 849,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Momentum space approach to crossing symmetric CFT correlators",
+                "id": 1018,
+                "affilations": [
+                    {
+                        "lat": 43.0822,
+                        "lng": -89.393,
+                        "affiliation": "Madison"
+                    },
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    },
+                    {
+                        "lat": 34.69,
+                        "lng": 135.1956,
+                        "affiliation": "Kobe"
+                    }
+                ]
+            },
+            {
+                "title": "Giant graviton interactions and M2-branes ending on multiple M5-branes",
+                "id": 1385,
+                "affilations": [
+                    {
+                        "lat": 35.0117,
+                        "lng": 135.7683,
+                        "affiliation": "Kyoto"
+                    },
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    },
+                    {
+                        "lat": -26.2044,
+                        "lng": 28.0456,
+                        "affiliation": "Johannesburg"
+                    }
+                ]
+            },
+            {
+                "title": "dS4 vacua from matter-coupled 4D N= 4 gauged supergravity",
+                "id": 3433,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric domain walls in 7D maximal gauged supergravity",
+                "id": 3631,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Two-dimensional SCFTs from matter-coupled 7DN=2 gauged supergravity",
+                "id": 3632,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric AdS 5 black holes and strings from 5D N= 4 gauged supergravity",
+                "id": 4484,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Holographic RG flows and AdS 5 black strings from 5D half-maximal gauged supergravity",
+                "id": 4630,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Twisted compactifications of 6D field theories from maximal 7D gauged supergravity",
+                "id": 7776,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric AdS4 black holes from matter-coupled N= 3 , 4 gauged supergravities",
+                "id": 9536,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Janus solutions from dyonic ISO(7) maximal gauged supergravity",
+                "id": 9771,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric Janus solutions in ω -deformed N= 8 gauged supergravity",
+                "id": 10030,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric domain walls in maximal 6D gauged supergravity I",
+                "id": 10244,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Holographic RG flows and Janus solutions from matter-coupled N= 4 gauged supergravity",
+                "id": 10697,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric domain walls in maximal 6D gauged supergravity. II.",
+                "id": 9457,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "New supersymmetric AdS5 black strings from 5D N= 4 gauged supergravity",
+                "id": 17799,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Supersymmetric solutions from N=6 gauged supergravity",
+                "id": 11263,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "New supersymmetric Janus solutions from N=4 gauged supergravity",
+                "id": 14650,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "Holographic RG flows and symplectic deformations of N=4 gauged supergravity",
+                "id": 14882,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            },
+            {
+                "title": "dS5 vacua from matter-coupled 5D N= 4 gauged supergravity",
+                "id": 3436,
+                "affilations": [
+                    {
+                        "lat": 13.7525,
+                        "lng": 100.4942,
+                        "affiliation": "Bangkok"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "title": "Digital-Twins towards Cyber-Physical Systems: A Brief Survey",
-        "id": 14112,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Atria Institute of Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Mongkut's University of Technology North Bangkok"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Pathumwan Institute of Technology"
-          }
-        ]
-      },
-      {
-        "title": "Reliability Quantification of Railway Electrification Mast Structure Considering Buckling",
-        "id": 9310,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Birmingham"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Harbin Institute of Technology"
-          }
-        ]
-      },
-      {
-        "title": "Chest X-ray analysis of tuberculosis by convolutional neural networks with affine transforms",
-        "id": 51,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Photo sharing service for recommending sightseeing places",
-        "id": 2211,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kanagawa Institute of Technology"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Defect Classification of Electronic Board Using Dense SIFT and CNN",
-        "id": 2331,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Technology Guwahati"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chubu University"
-          }
-        ]
-      },
-      {
-        "title": "Deep multi-label 3D ConvNet for breast cancer diagnosis in DBT with inversion augmentation",
-        "id": 2439,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Real-Time Polyps Segmentation for Colonoscopy Video Frames Using Compressed Fully Convolutional Network",
-        "id": 2656,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Aircraft Detection Based on Saliency Map and Convolution Neural Network",
-        "id": 3360,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The University of Tokyo"
-          }
-        ]
-      },
-      {
-        "title": "Occluded Facial Recognition with 2DPCA based Convolutional Neural Network",
-        "id": 4086,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chulachomklao Royal Military Acade.my"
-          }
-        ]
-      },
-      {
-        "title": "Classification of titanium microstructure with fully convolutional neural networks",
-        "id": 4191,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Classification of pulmonary tuberculosis lesion with convolutional neural networks",
-        "id": 4193,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Universal Joint Feature Extraction for P300 EEG Classification Using Multi-Task Autoencoder",
-        "id": 5556,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Vidyasirimedhi Institute of Science and Technology"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Worcester Polytechnic Institute"
-          }
-        ]
-      },
-      {
-        "title": "Semantic segmentation on remotely sensed images using an enhanced global convolutional network with channel attention and domain specific transfer learning",
-        "id": 5766,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Geo-Informatics and Space Technology Development Agency"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
-          }
-        ]
-      },
-      {
-        "title": "Neuroevolution Architecture Backbone for X-ray Object Detection",
-        "id": 5944,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The University of Tokyo"
-          }
-        ]
-      },
-      {
-        "title": "Self-Identification Deep Learning ARIMA",
-        "id": 7317,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Visual-based Items Recommendation Using Deep Neural Network",
-        "id": 7721,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Al Qassim University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Shanghai University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Semantic labeling in remote sensing corpora using feature fusion-based enhanced global convolutional network with high-resolution representations and depthwise atrous convolution",
-        "id": 7822,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Geo-Informatics and Space Technology Development Agency"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
-          }
-        ]
-      },
-      {
-        "title": "Development of Rhythm-based and Morphology-based Algorithm for Atrial Fibrillation Detection From Single Lead ECG Signal",
-        "id": 8015,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Combination of B-mode and color Doppler mode using mutual information including canonical correlation analysis for breast cancer diagnosis",
-        "id": 8882,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Angiodysplasia Segmentation on Capsule Endoscopy Images Using AlbuNet with Squeeze-and-Excitation Blocks",
-        "id": 9016,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Deep learning image-based defect detection in high voltage electrical equipment",
-        "id": 9141,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Al Qassim University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chongqing University"
-          }
-        ]
-      },
-      {
-        "title": "Deep learning-based visual defect-inspection system for reinforced concrete bridge substructure: a case of Thailand’s department of highways",
-        "id": 10494,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chulalongkorn Business School"
-          }
-        ]
-      },
-      {
-        "title": "Multi-scale Xception based depthwise separable convolution for single image superresolution",
-        "id": 10621,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Osaka University"
-          }
-        ]
-      },
-      {
-        "title": "Fast obstacle detection system for the blind using depth image and machine learning",
-        "id": 10788,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Automatic Sleep Data Scoring by Artificial Intelligence: A Pilot Study in Thai Population",
-        "id": 11527,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Chulalongkorn Memorial Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "A comparative study of window size and channel arrangement on eeg-emotion recognition using deep cnn",
-        "id": 11737,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Department of Computer Science and Engineering"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Osaka University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universiteit Twente"
-          }
-        ]
-      },
-      {
-        "title": "Emotion recognition of students during e-learning through online conference meeting",
-        "id": 12250,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Silpakorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kanagawa Institute of Technology"
-          }
-        ]
-      },
-      {
-        "title": "Generative adversarial network for video anomaly detection",
-        "id": 12273,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Multimodal Biometrics Recognition Using a Deep Convolutional Neural Network with Transfer Learning in Surveillance Videos",
-        "id": 14695,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Mongkut's Institute of Technology Ladkrabang"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tokai University"
-          }
-        ]
-      },
-      {
-        "title": "Pulmonary Lesion Classification Framework Using the Weighted Ensemble Classification with Random Forest and CNN Models for EBUS Images",
-        "id": 14788,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Improved image classification explainability with high-accuracy heatmaps",
-        "id": 15691,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "ICIP 2022 CHALLENGE ON PARASITIC EGG DETECTION AND CLASSIFICATION IN MICROSCOPIC IMAGES: DATASET, METHODS AND RESULTS",
-        "id": 16325,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Bristol"
-          }
-        ]
-      },
-      {
-        "title": "Modelling the Surface Roughness of Steel after Laser hardening by using 2D Visibility Network, Convolutional neural Networks and Genetic ProgrammingМОДЕЛИРАЊЕ ХРАПАВОСТИ ПОВРШИНЕ ЧЕЛИКА НАКОН ЛАСЕРСКОГ КАЉЕЊА КОРИШЋЕЊЕМ 2Д МРЕЖЕ ВИДЉИВОСТИ, КОНВОЛУЦИОНИХ НЕУРОНСКИХ МРЕЖА И ГЕНЕТСКОГ ПРОГРАМИРАЊА",
-        "id": 16608,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Univerza v Novem Mestu"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Univerza v Ljubljani"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Alma Mater Studiorum Università di Bologna"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Technische Universität Berlin"
-          }
-        ]
-      },
-      {
-        "title": "Data augmentation for stock return prediction",
-        "id": 16685,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "The Bangkok Urbanscapes Dataset for Semantic Urban Scene Understanding Using Enhanced Encoder-Decoder With Atrous Depthwise Separable A1 Convolutional Neural Networks",
-        "id": 16890,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chubu University"
-          }
-        ]
-      },
-      {
-        "title": "Enhancement of VGG16 model with multi-view and spatial dropout for classification of mosquito vectors",
-        "id": 17994,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Real-time gastric intestinal metaplasia diagnosis tailored for bias and noisy-labeled data with multiple endoscopic imaging",
-        "id": 18830,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Exploring the Spatial Effects of Built Environment on Quality of Life Related Transportation by Integrating GIS and Deep Learning Approaches",
-        "id": 19034,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chubu University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Thammasat University"
-          }
-        ]
-      },
-      {
-        "title": "MLP-UNet: Glomerulus Segmentation",
-        "id": 19614,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Nagoya City University East Medical Center"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Harbin University of Science and Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Technology Guwahati"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chubu University"
-          }
-        ]
-      },
-      {
-        "title": "Real-Time Identification of Malignant Biliary Strictures on Cholangioscopy Images Using Explainable Convolutional Neural Networks With Heatmaps",
-        "id": 19641,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "SENext: Squeeze-and-ExcitationNext for Single Image Super-Resolution",
-        "id": 19667,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Osaka University"
-          }
-        ]
-      },
-      {
-        "title": "Smart Trash Classification Machine",
-        "id": 19692,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "Automated Firearm Classification from Bullet Markings Using Deep Learning",
-        "id": 8909,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Thammasat University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Central Police Forensic Science Division"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ministry of Justice"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ruamrudee International School"
-          }
-        ]
-      },
-      {
-        "title": "Using Automatic Speech Recognition to Assess Thai Speech Language Fluency in the Montreal Cognitive Assessment (MoCA)",
-        "id": 16018,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Chulalongkorn Memorial Hospital"
-          }
-        ]
-      },
-      {
-        "title": "A highly resolved food web for insect seed predators in a species-rich tropical forest",
-        "id": 3428,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Smithsonian Tropical Research Institute"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Turun yliopisto"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad de Panamá"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Michigan State University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sveriges lantbruksuniversitet"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Oxford"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute of Entomology, Biology Centre of the Academy of Sciences of the Czech Republic"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Reading"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Jihočeská Univerzita v Českých Budějovicích"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Smithsonian National Museum of Natural History"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of San Diego"
-          }
-        ]
-      },
-      {
-        "title": "Design for Manufacture and Assembly of Digital Fabrication and Additive Manufacturing in Construction: A Review",
-        "id": 18983,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Rajamangala University of TechnologyThanyaburi"
-          }
-        ]
-      },
-      {
-        "title": "Digital Twins for Managing Railway Bridge Maintenance, Resilience, and Climate Change Adaptation",
-        "id": 20039,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Birmingham"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Wollongong"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Prince of Songkla University"
-          }
-        ]
-      },
-      {
-        "title": "New insights from Thailand into the maternal genetic history of Mainland Southeast Asia",
-        "id": 1323,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Khon Kaen University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chiang Mai University"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Ferrara"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Naresuan University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Max-Planck-Institut für Evolutionäre Anthropologie"
-          }
-        ]
-      },
-      {
-        "title": "W+W- boson pair production in proton-proton collisions at s =13 TeV",
-        "id": 8549,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Rheinisch-Westfälische Technische Hochschule Aachen"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tata Institute of Fundamental Research, Mumbai"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli studi di Bari Aldo Moro"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Pavia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "College of Engineering and Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Science"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institut Pluridisciplinaire Hubert Curien"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Milli Savunma Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Science, University of Split"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute for Particle Physics Phenomenology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "State Key Laboratory of Nuclear Physics and Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Purdue University Northwest"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Rutgers University–New Brunswick"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Academy of Scientific Research &amp; Technology, Cairo"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Trieste"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Perugia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Genova"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Bologna"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Catania"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Bari"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Milano-Bicocca"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Torino"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Pavia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Firenze"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Pisa"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Narodowe Centrum Badań Jądrowych, Otwock"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Napoli"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "CSFNSM Centro Siciliano di Fisica Nuclear e Struttura della Materia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare, Sezione di Padova"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Shoolini University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Science and Technology of Mazandaran, Behshahr"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Université Paris-Saclay"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Laboratoire Leprince-Ringuet"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Institute of Science Education and Research"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Necmettin Erbakan Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sinop Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Şırnak University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Pîrî Reis Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "İstanbul Aydın Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Karamanoğlu Mehmetbey Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bingöl Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ilia State University (ISU)"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute for Scintillation Materials of NAS of Ukraine"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Technology Bhubaneswar"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Science Education and Research Pune"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Karlsruher Institut für Technologie"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Stefan-Meyer-Institut für Subatomare Physik"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ozyegin University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Adiyaman Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Erzincan Binali Yıldırım Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture, University of Split"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Texas A&amp;M University at Qatar"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad San Francisco de Quito"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Escuela Politécnica Nacional"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Georgian Technical University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Recinto Universitario de Mayagüez"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Cyprus"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Eastern University, Sri Lanka"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Ruhuna"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Colombo"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Riga Technical University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Yerevan Physics Institute"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Institute of Chemical Physics and Biophysics, Tallinn"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Belgrade"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Montenegro"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institut za Nuklearne Nauke Vinca"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institut fiziki vysokikh energii"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Research Nuclear University MEPhI"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Quaid-i-Azam University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute for Nuclear Problems of Belarusian State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Vilniaus Universitetas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad de Antioquia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad de Los Andes, Colombia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bhabha Atomic Research Centre"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universiteit Gent"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad de Sonora"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Çukurova Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sapienza Università di Roma"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Wisconsin-Madison"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University at Buffalo, The State University of New York"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "California Institute of Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute for Nuclear Research of the Russian Academy of Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad Autónoma de San Luis Potosí"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Scuola Normale Superiore di Pisa"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Deutsches Elektronen-Synchrotron (DESY)"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of California, San Diego"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Helsinki Institute of Physics"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade Estadual de Campinas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Saha Institute of Nuclear Physics"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of California, Riverside"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Hyderabad"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Minnesota Twin Cities"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Delhi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of California, Santa Barbara"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universiti Malaya"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National and Kapodistrian University of Athens"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università di Pisa"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Northeastern University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istanbul Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universität Hamburg"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Alma Mater Studiorum Università di Bologna"
-          },
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Isfahan University of Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Consejo Nacional de Ciencia y Tecnologia Mexico"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Marmara Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Carnegie Mellon University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sejong University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universite de Haute Alsace"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Seoul"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute of High Energy Physics Chinese Academy of Science"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Illinois at Chicago"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of California, Los Angeles"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Fayoum University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Chinese Academy of Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Politecnico di Bari"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Rochester"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Vrije Universiteit Brussel"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad Autónoma de Madrid"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Nebraska–Lincoln"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Lawrence Livermore National Laboratory"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Hungarian University of Agriculture and Life Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "IN2P3 - Institut National de Physique Nucléaire et de Physique Des Particules"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "ETH Zürich"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Technology Madras"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The University of Alabama"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tsinghua University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Southampton"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institut fur Hochenergiephysik"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Eötvös Loránd Tudományegyetem"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Genova"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Hanyang University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Benemerita Universidad Autonoma de Puebla"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Central University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Iowa"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tomsk Polytechnic University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Budker Institute of Nuclear Physics of the Siberian Branch of the RAS"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Université Claude Bernard Lyon 1"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The British University in Egypt"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Rutherford Appleton Laboratory"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Laboratório de Instrumentacao e Física Experimental de Partículas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Massachusetts Institute of Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "İstanbul Teknik Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Virginia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Firenze"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istituto Nazionale di Fisica Nucleare - INFN"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Notre Dame"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Texas Tech University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sun Yat-Sen University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi della Basilicata"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Bristol"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Brunel University London"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Canterbury"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Texas A&amp;M University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Hacettepe Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The Catholic University of America"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Brandenburgische Technische Universität Cottbus"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Maryland, College Park"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Nanjing Normal University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Paul Scherrer Institut"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sofia University St. Kliment Ohridski"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Organisation Européenne pour la Recherche Nucléaire"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Boston University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ente Per Le Nuove Tecnologie, l'Energia e l'Ambiente"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Monash University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Visva-Bharati University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Alikhanov Institute for Theoretical and Experimental Physics"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Panjab University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Trieste"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Technische Universität Wien"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Iranian Research Institute for Fundamental Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "AGH University of Krakow"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Centro de Investigacion y de Estudios Avanzados del Instituto Politécnico Nacional"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Napoli Federico II"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Peter the Great St. Petersburg Polytechnic University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Yonsei University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tomsk State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ain Shams University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Charles University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "INFN, Laboratori Nazionali Di Frascati"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The University of Tennessee, Knoxville"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Kansas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Florida International University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad de Cantabria"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Imperial College London"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Petersburg Nuclear Physics Institute (PNPI)"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade Federal de Pelotas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of California, Davis"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "LUT University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kafkas Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Technology Bombay"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Indian Institute of Science"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Florida"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Fermi National Accelerator Laboratory"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Beihang University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Warsaw"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Seoul National University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute for Nuclear Research and Nuclear Energy Bulgarian Academy of Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universiteit Antwerpen"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kyungpook National University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universität Zürich"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Milano-Bicocca"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Torino"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "T.C. Beykent Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad Iberoamericana"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Brown University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Baylor University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Mississippi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Florida Institute of Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Catania"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Fudan University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Istanbul Bilgi Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Wayne State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Purdue University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade Federal de Mato Grosso do Sul"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "P.N. Lebedev Physical Institute of the Russian Academy of Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Izmir Yüksek Teknoloji Enstitüsü"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Science Center Kharkov Institute of Physics and Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bethel University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Mersin Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Centro Brasileiro de Pesquisas Físicas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Cornell University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sungkyunkwan University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Lomonosov Moscow State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Northwestern University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chonnam National University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidad de Oviedo"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade Federal do Rio Grande do Sul"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Yakın Doğu Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Boğaziçi Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The University of Auckland"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade do Estado do Rio de Janeiro"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Taiwan University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Rice University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Korea University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Johns Hopkins University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University College Dublin"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Joint Institute for Nuclear Research, Dubna"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Ioannina"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Debreceni Egyetem"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Middle East Technical University (METU)"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Zhejiang University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Vanderbilt University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Mimar Sinan Güzel Sanatlar Üniversitesi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Politechnika Warszawska"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi del Piemonte Orientale \"Amedeo Avogadro\""
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Wigner Research Centre for Physics"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The Ohio State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Princeton University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Perugia"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Helsingin Yliopisto"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Technical University of Athens"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Siena"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Atommagkutató Intézet"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute of Physics Bhubaneswar"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Florida State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Novosibirsk State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kyung Hee University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Universidade Federal do ABC"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National Centre for Scientific Research \"DEMOKRITOS\""
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institut Ruđer Bošković"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Université Catholique de Louvain"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kansas State University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università degli Studi di Padova"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Moscow Institute of Physics and Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Colorado Boulder"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Université Libre de Bruxelles"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bozok Universitetesi Rektörlügü"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Università G. Marconi"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "G.H.G. Khalsa College"
-          }
-        ]
-      },
-      {
-        "title": "Predictive Analysis of the Building Damage from the 2011 Great East Japan Tsunami Using Decision Tree Classification Related Algorithms",
-        "id": 12556,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tohoku University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sirindhorn International Institute of Technology, Thammasat University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Praedicat, Inc."
-          }
-        ]
-      },
-      {
-        "title": "Mapping groundwater potential zones in Kanchanaburi Province, Thailand by integrating of analytic hierarchy process, frequency ratio, and random forest",
-        "id": 13338,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Agriculture and Forestry, Hue University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Queensland University of Technology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bac Lieu University"
-          }
-        ]
-      },
-      {
-        "title": "Development and validation of a prognostic prediction model including the minor lymphatic pathway for distant metastases in cervical cancer patients",
-        "id": 13502,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Ramathibodi Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Siriraj Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Prince of Songkia University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Thammasat University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chiang Mai University"
-          }
-        ]
-      },
-      {
-        "title": "Global review of groundwater potential models in the last decade: Parameters, model techniques, and validation",
-        "id": 13774,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Agriculture and Forestry, Hue University"
-          }
-        ]
-      },
-      {
-        "title": "Acceptance and Perception of Artificial Intelligence Usability in Eye Care (APPRAISE) for Ophthalmologists: A Multinational Perspective",
-        "id": 13894,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The Chinese University of Hong Kong, Shenzhen"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Macquarie University Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Seoul National University Bundang Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Duke-NUS Medical School"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Southend University Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chang Gung Memorial Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Kagoshima University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Melbourne"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University Hospitals Birmingham NHS Foundation Trust"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tsinghua University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sankara Nethralaya"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Uniwersytet Warminsko-Mazurski w Olsztynie"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Singapore Eye Research Institute"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Illinois College of Medicine"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Rangsit University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "King Chulalongkorn Memorial Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Sun Yat-Sen University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National University of Singapore"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Oregon Health &amp; Science University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Moorfields Eye Hospital NHS Foundation Trust"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bascom Palmer Eye Institute"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Washington"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Copenhagen University Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Doheny Eye Institute"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "UCL Institute of Ophthalmology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine and Health"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tel Aviv Sourasky Medical Center"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chinese University of Hong Kong"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Seoul National University College of Medicine"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute for Research in Ophthalmology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "OasisEye Specialists"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Asociados de Macula"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Oculocare Medical AG"
-          }
-        ]
-      },
-      {
-        "title": "Assisting Multitargeted Ligand Affinity Prediction of Receptor Tyrosine Kinases Associated Nonsmall Cell Lung Cancer Treatment with Multitasking Principal Neighborhood Aggregation",
-        "id": 16016,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Vidyasirimedhi Institute of Science and Technology"
-          }
-        ]
-      },
-      {
-        "title": "Experiments of Supervised Learning and Semi-Supervised Learning in Thai Financial News Sentiment: A Comparative Study",
-        "id": 17917,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Chulalongkorn Business School"
-          }
-        ]
-      },
-      {
-        "title": "Determination of conditioning factors for mapping nickel contamination susceptibility in groundwater in Kanchanaburi Province, Thailand, using random forest and maximum entropy",
-        "id": 18093,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "University of Agriculture and Forestry, Hue University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Queensland University of Technology"
-          }
-        ]
-      },
-      {
-        "title": "APASL-ACLF Research Consortium–Artificial Intelligence (AARC-AI) model precisely predicts outcomes in acute-on-chronic liver failure patients",
-        "id": 19130,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Beijing YouAn Hospital, Capital Medical University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Institute of Liver and Biliary Sciences"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "National University Health System"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Siksha O Anusandhan (Deemed to be University)"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "302 Hospital of People's Liberation Army"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "The Aga Khan University Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Lokmanya Tilak Municipal General Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Bangabandhu Sheikh Mujib Medical University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Hallym University, College of Medicine"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Tongji Medical College"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Christian Medical College, Vellore"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Postgraduate Institute of Medical Education &amp; Research, Chandigarh"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Hospital Selayang"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "St. John’s Medical College"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Nork Clinical Hospital of Infectious Diseases"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "VGM Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Global Hospitals"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Medistra Hospital"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "DMC and Hospital"
-          }
-        ]
-      },
-      {
-        "title": "PARP1PRED: A WEB SERVER FOR SCREENING THE BIOACTIVITY OF INHIBITORS AGAINST DNA REPAIR ENZYME PARP-1",
-        "id": 19187,
-        "affilations": [
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine Ramathibodi Hospital, Mahidol University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Faculty of Medicine, Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Snowflake Inc."
-          }
-        ]
-      },
-      {
-        "title": "Sleep Behavior Classification Based on Clusters of Sleep Quality",
-        "id": 19270,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          }
-        ]
-      },
-      {
-        "title": "On Hyperparameter Optimization of Machine Learning Methods Using a Bayesian Optimization Algorithm to Predict Work Travel Mode Choice",
-        "id": 19879,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 100.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Politechnika Wroclawska"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "VSB – Technical University of Ostrava"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Uniwersytet Slaski w Katowicach"
-          }
-        ]
-      },
-      {
-        "title": "GNSS rover receivers’ horizontal positioning accuracy assessments based on NRTK-VRS surveying",
-        "id": 19462,
-        "affilations": [
-          {
-            "lat": 13.7389,
-            "lng": 10.5284,
-            "affiliation": "Chulalongkorn University"
-          },
-          {
-            "lat": 37.6170,
-            "lng": 22.3834,
-            "affiliation": "National Institute of Metrology"
-          },
-          {
-            "lat": 37.6170,
-            "lng": -122.3834,
-            "affiliation": "Royal Thai Survey Department"
-          }
-        ]
-      }
-    ]
-  }
+    }
 }
