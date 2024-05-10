@@ -26,7 +26,7 @@ def get_affil_by_id(list_affi_id: list[int]) -> list[affilResp]:
         raise HTTPException(status_code=503, detail="Data not available")
     aff_df = aff_df[["id", "affilcity", "lat", "lon"]]
     df_current_affi = pd.DataFrame({"id": list_affi_id})
-    df_current_affi = df_current_affi.merge(aff_df, on="id", how="left")
+    df_current_affi = df_current_affi.merge(aff_df, on="id", how="inner")
     dict_ = df_current_affi.to_dict(orient="records")
     result = [
         affilResp(affiliation=aff["affilcity"], lat=aff["lat"], lng=aff["lon"])

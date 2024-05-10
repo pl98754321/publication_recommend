@@ -9,6 +9,7 @@ import pandas as pd
 class DataLoader(ABC):
     def __init__(self, path: str, list_need_col: list[str] | None = None):
         self.list_need_col = list_need_col or []
+        self.path = path
         self.update_data(path)
 
     def check_column(self, df: pd.DataFrame) -> None:
@@ -27,6 +28,9 @@ class DataLoader(ABC):
         self.check_column(csv)
         self.csv = self.preprocess_df(csv)
         self.is_avaliable = True
+
+    def update_new(self):
+        self.update_data(self.path)
 
     def get_data(self) -> None | pd.DataFrame:
         if self.is_avaliable:
