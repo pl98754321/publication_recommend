@@ -9,7 +9,10 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Create TF-IDF representation
+
+def get_path(folder_name: str):
+    current_path = Path(__file__).parent.parent / folder_name
+    return current_path.__str__()
 
 
 def clean_text(text):
@@ -151,9 +154,9 @@ def load_data():
     import pandas as pd
 
     # lat_lon_ciry = pd.DataFrame(columns=["affilcity","lat","lon"])
-    lat_lon_ciry = pd.read_csv("./data_raw/worldcities.csv")
-    df_ref = pd.read_csv("./data_raw/ref_raw.csv")
-    df_pub = pd.read_csv("./data_raw/pub_raw.csv")
+    lat_lon_ciry = pd.read_csv(get_path("/data_raw/worldcities.csv"))
+    df_ref = pd.read_csv(get_path("data_raw/ref_raw.csv"))
+    df_pub = pd.read_csv(get_path("data_raw/pub_raw.csv"))
 
     lat_lon_ciry = lat_lon_ciry[["city_ascii", "lat", "lng"]].rename(
         columns={"city_ascii": "affilcity", "lat": "lat", "lng": "lon"}
@@ -171,6 +174,9 @@ def load_data():
     for col in ["affilname", "affilcity", "affilcountry"]:
         df_pub[col] = df_pub[col].apply(ast.literal_eval)
     return df_ref, df_pub, lat_lon_ciry
+
+
+""
 
 
 def load_new_pub(paper_info_path: str, ref_info_path: str):
@@ -210,8 +216,8 @@ def merge_save_new_pub(
     df_ref = df_ref.drop_duplicates(subset=["title", "title_ref"])
 
     df_pub = df_pub[df_pub["title"].notna() & df_pub["abstracts"].notna()]
-    df_pub.to_csv("./data_raw/pub_raw.csv", index=False)
-    df_ref.to_csv("./data_raw/ref_raw.csv", index=False)
+    df_pub.to_csv(get_path("data_raw/pub_raw.csv"), index=False)
+    df_ref.to_csv(get_path("data_raw/ref_raw.csv"), index=False)
     return df_pub, df_ref
 
 
@@ -228,6 +234,6 @@ def main(paper_info_path: str, ref_info_path: str):
     print("Recommendation added")
     df_ref_merge_id = preprocess_df_ref(df_ref, df_pub)
     print("Save data")
-    affiliate_df.to_csv("./data_process/affiliation.csv", index=False)
-    df_pub_preprocess.to_csv("./data_process/pub_preprocessed.csv", index=False)
-    df_ref_merge_id.to_csv("./data_process/ref_preprocessed.csv", index=False)
+    affiliate_df.to_csv(get_path("data_process/affiliation.csv"), index=False)
+    df_pub_preprocess.to_csv(get_path("data_process/pub_preprocessed.csv"), index=False)
+    df_ref_merge_id.to_csv(get_path("data_process/ref_preprocessed.csv"), index=False)
