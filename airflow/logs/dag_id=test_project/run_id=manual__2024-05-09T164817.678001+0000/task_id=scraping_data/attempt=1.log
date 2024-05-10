@@ -1,0 +1,40 @@
+[2024-05-09T16:48:18.869+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-09T16:48:19.034+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_project.scraping_data manual__2024-05-09T16:48:17.678001+00:00 [queued]>
+[2024-05-09T16:48:19.044+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_project.scraping_data manual__2024-05-09T16:48:17.678001+00:00 [queued]>
+[2024-05-09T16:48:19.044+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-09T16:48:19.056+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): scraping_data> on 2024-05-09 16:48:17.678001+00:00
+[2024-05-09T16:48:19.072+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=306) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-09T16:48:19.074+0000] {standard_task_runner.py:63} INFO - Started process 310 to run task
+[2024-05-09T16:48:19.067+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_project', 'scraping_data', 'manual__2024-05-09T16:48:17.678001+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/test_dags.py', '--cfg-path', '/tmp/tmpu1z8nrl1']
+[2024-05-09T16:48:19.086+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask scraping_data
+[2024-05-09T16:48:19.490+0000] {task_command.py:426} INFO - Running <TaskInstance: test_project.scraping_data manual__2024-05-09T16:48:17.678001+00:00 [running]> on host 588ea970fafc
+[2024-05-09T16:48:19.823+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_project' AIRFLOW_CTX_TASK_ID='scraping_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-09T16:48:17.678001+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-09T16:48:17.678001+00:00'
+[2024-05-09T16:48:19.827+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-09T16:48:19.929+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-09T16:48:19.932+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/test_dags.py", line 34, in scraping
+    paper_info_path , ref_info_path = get_scraping()
+                                      ^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/scraping.py", line 95, in get_scraping
+    os.mkdir(day_folder)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/research_csv/09D05M2024Y'
+[2024-05-09T16:48:19.983+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=test_project, task_id=scraping_data, run_id=manual__2024-05-09T16:48:17.678001+00:00, execution_date=20240509T164817, start_date=20240509T164819, end_date=20240509T164819
+[2024-05-09T16:48:20.007+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3 for task scraping_data ([Errno 2] No such file or directory: '/opt/airflow/research_csv/09D05M2024Y'; 310)
+[2024-05-09T16:48:20.051+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-09T16:48:20.061+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

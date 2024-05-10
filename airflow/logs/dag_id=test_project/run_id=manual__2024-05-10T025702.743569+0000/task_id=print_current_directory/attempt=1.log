@@ -1,0 +1,19 @@
+[2024-05-10T02:57:03.990+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-10T02:57:04.201+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_project.print_current_directory manual__2024-05-10T02:57:02.743569+00:00 [queued]>
+[2024-05-10T02:57:04.211+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_project.print_current_directory manual__2024-05-10T02:57:02.743569+00:00 [queued]>
+[2024-05-10T02:57:04.212+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-10T02:57:04.229+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_current_directory> on 2024-05-10 02:57:02.743569+00:00
+[2024-05-10T02:57:04.239+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_project', 'print_current_directory', 'manual__2024-05-10T02:57:02.743569+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/test_dags.py', '--cfg-path', '/tmp/tmpklzs6ty9']
+[2024-05-10T02:57:04.242+0000] {standard_task_runner.py:91} INFO - Job 25: Subtask print_current_directory
+[2024-05-10T02:57:04.243+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=528) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-10T02:57:04.244+0000] {standard_task_runner.py:63} INFO - Started process 534 to run task
+[2024-05-10T02:57:04.292+0000] {task_command.py:426} INFO - Running <TaskInstance: test_project.print_current_directory manual__2024-05-10T02:57:02.743569+00:00 [running]> on host b0077577925f
+[2024-05-10T02:57:04.365+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_project' AIRFLOW_CTX_TASK_ID='print_current_directory' AIRFLOW_CTX_EXECUTION_DATE='2024-05-10T02:57:02.743569+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-10T02:57:02.743569+00:00'
+[2024-05-10T02:57:04.366+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-10T02:57:04.377+0000] {logging_mixin.py:188} INFO - /opt/***
+[2024-05-10T02:57:04.377+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-10T02:57:04.378+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-10T02:57:04.386+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=test_project, task_id=print_current_directory, run_id=manual__2024-05-10T02:57:02.743569+00:00, execution_date=20240510T025702, start_date=20240510T025704, end_date=20240510T025704
+[2024-05-10T02:57:04.417+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-10T02:57:04.434+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-10T02:57:04.436+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

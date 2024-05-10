@@ -1,9 +1,0 @@
-version: "3"
-services:
-  airflow_project:
-    image: airflow_project:latest
-    volumes:
-      - ./:/opt/airflow
-    ports:
-      - "8080:8080"
-    command: airflow standalone

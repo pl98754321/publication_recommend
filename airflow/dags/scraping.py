@@ -73,7 +73,7 @@ def to_csv(result,dt,ref,paperNid,header):
     return dt,ref
 
 def get_scraping():
-    my_path = os.getcwd()
+    my_path = os.getcwd() + '/plugins'
     api_key = '403f16e2d699027ef9f5e9077f6842ad'
     ninja_api_key = 'bG/Q3BLOWdlb0zchs8ezrA==sME0wftYnNrSvxPv'
 
@@ -128,10 +128,10 @@ def get_scraping():
 
 
     #publicatino year 2018 and doctype article
-    days_fetch = len(os.listdir('./research_csv'))-1
+    days_fetch = len(os.listdir(my_path+'/research_csv'))-1
     for i in range(len(pubyear)):
         search_query = '%28PUBYEAR%20%3D%20'+pubyear[i]+'%29%20AND%20%28DOCTYPE%28ar%29%29'
-        itemperpage = '20'
+        itemperpage = '200'
         response = rq.get(api_url + search_query +"&count="+itemperpage  + "&start=" +str(int(itemperpage) *days_fetch) , headers = header)
         result = (response.json())
         print(result)
@@ -144,7 +144,7 @@ def get_scraping():
     paper_info['affil_coor'] = paper_info.apply(lambda x : [] , axis=1)
     coor = dict()
     if os.path.exists(my_path+'/coor.json'):
-        f = open('coor.json')
+        f = open(my_path+'/coor.json')
         coor = json.load(f)
         f.close()
         
@@ -177,7 +177,7 @@ def get_scraping():
                 else:
                     paper_info.loc[i,'affil_coor'].append('')
         
-    with open("coor.json",'w') as coorjson:
+    with open(my_path+"/coor.json",'w') as coorjson:
         json.dump(coor , coorjson)
 
 
@@ -191,4 +191,3 @@ def get_scraping():
     ref_info_file = day_folder+'/ref_info.csv'
 
     return paper_info_file , ref_info_file
-
