@@ -9,5 +9,5 @@ services:
     restart: unless-stopped
     ports:
       - "8081:8080"
-    volumes:
-      - ./ds/data_process:/fastapi/data_process
+    # volumes:
+    #   - ./ds/data_process:/data_process
