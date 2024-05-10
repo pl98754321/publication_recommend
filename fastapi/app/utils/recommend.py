@@ -96,13 +96,28 @@ def get_edge_resp(pub_id: int, lower_bound: int) -> list[EdgeResp]:
     Get edge response
     """
     ref_df = ref_dataloader.get_data()
+    pub_df = pub_dataloader.get_data()
     if ref_df is None:
         raise HTTPException(status_code=503, detail="Ref Data not available")
+    if pub_df is None:
+        raise HTTPException(status_code=503, detail="Pub Data not available")
     ref_df = ref_df[(ref_df["source"] == pub_id) & (ref_df["weight"] > lower_bound)]
-    [source, target, weight] = ref_df[["source", "target", "weight"]].values.T
+    ref_df = ref_df.merge(
+        pub_df[["id", "title"]], left_on="source", right_on="id", how="inner"
+    )
+    ref_df = ref_df.merge(
+        pub_df[["id", "title"]],
+        left_on="target",
+        right_on="id",
+        how="inner",
+        suffixes=("_source", "_target"),
+    )
+    [source, target, weight, target_id] = ref_df[
+        ["title_source", "title_target", "weight", "target"]
+    ].values.T
     return [
-        EdgeResp(source=s, target=t, weight=w)
-        for s, t, w in zip(source, target, weight)
+        EdgeResp(source=s, target=str(t), weight=w, target_id=tar)
+        for s, t, w, tar in zip(source, target, weight, target_id)
     ]
 
 
@@ -111,7 +126,7 @@ def get_node_graph(pub_id: int, lower_bound: int) -> NodeGraphResp:
     Get node graph
     """
     edges = get_edge_resp(pub_id, lower_bound)
-    pub_taget_ids = [edge.target for edge in edges]
+    pub_taget_ids = [edge.target_id for edge in edges]
     nodes = get_pub_resp_by_list_id(pub_taget_ids, need_affil=True)
     return NodeGraphResp(edge=edges, node=nodes)
 

@@ -26,8 +26,9 @@ class AutocompleteResp(BaseModel):
 
 
 class EdgeResp(BaseModel):
-    source: int
-    target: int
+    target_id: int
+    source: str
+    target: str
     weight: float
 
 
