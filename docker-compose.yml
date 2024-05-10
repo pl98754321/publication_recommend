@@ -9,5 +9,14 @@ services:
     restart: unless-stopped
     ports:
       - "8081:8080"
-    # volumes:
-    #   - ./ds/data_process:/data_process
+    volumes:
+      - ./airflow/plugins/data_process:/data_process
+
+  # ds:
+  #   build:
+  #     context: ./ds
+  #     dockerfile: Dockerfile
+  #   container_name: ds
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./webscraping/research_csv:/research_csv
